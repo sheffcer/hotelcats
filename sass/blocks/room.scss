@@ -1,0 +1,7 @@
+.room {
+
+  &__inner {
+    @include container;
+    outline: 1px dotted #000000;
+  }
+}

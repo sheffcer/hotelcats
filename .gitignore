@@ -1,6 +1,6 @@
 build/*
 design/
-sass/style.scss
+# sass/style.scss
 sass/blocks/sprite-svg/img/sprite-svg.svg
 sass/blocks/sprite-png/sprite-png.scss
 sass/blocks/sprite-png/img/sprite-*.png

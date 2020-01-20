@@ -4,4 +4,63 @@
     @include container;
     outline: 1px dotted #000000;
   }
+
+  &__row {
+    @include row;
+  }
+
+  &__item {
+    outline: 1px dotted pink;
+    @include col(xs, 12, $grid-columns, 30px); // малые ширины — 12 из 12, промежутки по умолчанию
+    @include col(sm, 12, $grid-columns, 30px); // SM (480 по умолчанию) — 6 из 12, промежутки 10px
+    @include col(md, 4, $grid-columns, 40px); // MD (768 по умолчанию) — 4 из 12, промежутки 12px
+    @include col(lg, 3, $grid-columns, 16px); // LG (992 по умолчанию) — 3 из 12, промежутки 16px
+    @include col(xl, 2, $grid-columns, 20px); // XL (1200 по умолчанию) — 2 из 12, промежутки 20px
+    @include col(xxl, 1, $grid-columns, 26px); // XXL (1800 по умолчанию) — 1 из 12, промежутки 26px
+    box-sizing: border-box;
+    margin-bottom: 30px;
+  }
+
+  &__item-wrap {
+    outline: 1px dotted red;
+    padding-bottom: 7px;
+  }
+
+  &__header {
+    font-family: $font-family--rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 43px;
+    text-align: center;
+    padding-top: 22px;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    font-family: $font-family--rubik;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    color: $text-color;
+    text-align: center;
+  }
+
+  &__text {
+    max-width: 240px;
+    padding-left: 25px;
+    margin-top: -7px;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 140%;
+    color: $text-color;
+  }
+
+  &__img {
+    margin-left: 25px;
+    margin-top: 23px;
+    margin-bottom: 7px;
+  }
 }

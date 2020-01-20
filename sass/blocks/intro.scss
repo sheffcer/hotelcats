@@ -1,8 +1,18 @@
 .intro {
+  background: url('../img/intro-mobile.jpg') no-repeat center top;
+
+  @media (min-width: $screen-md) {
+    background: url('../img/intro-tablet.jpg') no-repeat center top;
+  }
+
+  @media (min-width: $screen-lg) {
+    background: url('../img/intro-tablet.jpg') no-repeat center top;
+  }
 
   &__inner {
     @include container;
     outline: 1px dotted #000000;
+    min-height: 457px;
   }
 
   &__text {

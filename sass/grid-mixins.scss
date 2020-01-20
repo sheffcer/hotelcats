@@ -43,14 +43,14 @@ $grid-gutter-width:           30px !default;
 
   }
 
-  @media (min-width: $screen-sm) {
-    width: $container-sm;
+  // @media (min-width: $screen-sm) {
+  //   width: $container-sm;
 
-    @if ($sm-grid-gutter != $xs-grid-gutter) {
-      padding-left: ($sm-grid-gutter / 2);
-      padding-right: ($sm-grid-gutter / 2);
-    }
-  }
+  //   @if ($sm-grid-gutter != $xs-grid-gutter) {
+  //     padding-left: ($sm-grid-gutter / 2);
+  //     padding-right: ($sm-grid-gutter / 2);
+  //   }
+  // }
 
   @media (min-width: $screen-md) {
     width: $container-md;

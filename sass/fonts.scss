@@ -1,15 +1,15 @@
 @font-face {
-  font-family: "'Oswaldregular'";
+  font-family: "'Lato-Regular'";
   font-weight: 400;
   font-style: normal;
-  src: local('Oswaldregular'), local('Oswaldregular'), url('../fonts/Oswaldregular.woff2') format('woff2'), url('../fonts/Oswaldregular.woff') format('woff');
+  src: local('Lato-Regular'), local('Lato-Regular'), url('../fonts/Lato-Regular.ttf') format('ttf');
 }
 
 @font-face {
-  font-family: "'Oswaldmedium'";
-  font-weight: 400;
+  font-family: "'Rubik-Bold'";
+  font-weight: bold;
   font-style: normal;
-  src: local('Oswaldmedium'), local('Oswaldmedium'), url('../fonts/Oswaldmedium.woff2') format('woff2'), url('../fonts/Oswaldmedium.woff') format('woff');
+  src: local('Rubik-Bold'), local('Rubik-Bold'), url('../fonts/Rubik-Bold.ttf') format('ttf');
 }
 
 @font-face {

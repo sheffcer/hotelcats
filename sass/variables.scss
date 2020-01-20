@@ -21,17 +21,19 @@ $color-warning:               hsl(35, 84%, 62%);
 
 // Семантические цвета
 
-$text-color:                  $gray-darkest;
+$text-color:                  #1A212F;
 $text-color--muted:           $gray;
 $body-bg:                     $white;
 $link-color:                  $color-main;
 $link-color--hover:           darken($color-main, 15%);
 $border-color:                $gray-light;
+$btn-color:                 #FF7236;
+
 
 
 // Базовая типографика
 
-$font-size--root:             16px;
+$font-size--root:             15px;
 
 $font-size:                   1rem; // rem(16px)
 
@@ -45,8 +47,8 @@ $font-size--h6:               rem(16px);
 $font-size--small:            80%;
 $line-height:                 1.5;
 
-$font-family:                 -apple-system, BlinkMacSystemFont, 'Roboto', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-$font-family--serif:          'Georgia', 'Times New Roman', 'Times', serif;
+$font-family:                 'Lato-Regular', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+$font-family--rubik:          'Rubik-Bold', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 $font-family--monospace:      SFMono-Regular, 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
 $font-family--headings:       $font-family;
 

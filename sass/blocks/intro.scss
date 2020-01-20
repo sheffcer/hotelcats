@@ -4,4 +4,30 @@
     @include container;
     outline: 1px dotted #000000;
   }
+
+  &__text {
+    font-family: $font-family;
+    font-size: rem(12px);
+    line-height: rem(14px);
+    text-align: center;
+    color: $text-color;
+  }
+
+  &__title {
+    font-family: $font-family--rubik;
+    font-size: rem(44px);
+    line-height: rem(52px);
+    color: $text-color;
+    text-align: center;
+  }
+
+  &__description {
+    width: 277px;
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: rem(16px);
+    line-height: rem(19px);
+    color: $text-color;
+    text-align: center;
+  }
 }

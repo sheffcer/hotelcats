@@ -10,6 +10,16 @@
   z-index: 100;
   transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
   padding-bottom: 162px;
+
+  @media (min-width: $screen-md) {
+    display: block;
+    position: static;
+    min-width: 430px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    background-color: $background-color!important;
+  }
 }
 
 .nav-open .navbar{

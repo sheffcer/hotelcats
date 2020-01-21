@@ -6,14 +6,18 @@
     min-height: 62px;
     display: flex;
     justify-content: space-between;
+
+    @media (min-width: $screen-md) {
+      min-height: 76px;
+    }
   }
 
   &__contact {
-    // display: none;
-  }
+    display: block;
 
-  & .navbar {
-    // display: none;
+    @media (min-width: $screen-md) {
+      display: none;
+    }
   }
 
   &__contact-tel {

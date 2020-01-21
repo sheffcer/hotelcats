@@ -13,7 +13,11 @@
       <div class="page-header__inner">
         <div class="logo">
           <a href="#">
-           <img class="logo__img" src="img/logo.svg" alt="mobile-logo">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="logo__img" src="img/logo.svg" alt="mobile-logo">
+          </picture>
           </a>
         </div>
         <button class="nav-toggle" type="button">

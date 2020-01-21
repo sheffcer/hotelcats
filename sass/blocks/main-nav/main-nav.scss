@@ -2,7 +2,12 @@
   position: relative;
   z-index: 10;
   margin-top: 27px;
-  margin-left: -5px;
+  // margin-left: -5px;
+
+  @media (min-width: $screen-md) {
+    margin-top: 22px;
+    margin-left: -25px;
+  }
 
   // первый уровень
   &__list {
@@ -10,6 +15,11 @@
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      min-width: 430px;
+    }
   }
 
   &__item {
@@ -32,6 +42,11 @@
     &:focus {
       text-decoration: none;
       background-color: $gray-lightest;
+    }
+
+    @media (min-width: $screen-md) {
+      font-size: 16px;
+      line-height: 19px;
     }
 
   }

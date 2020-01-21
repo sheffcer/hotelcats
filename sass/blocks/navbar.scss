@@ -1,6 +1,7 @@
 .navbar {
   display: none;
-  position: fixed;
+  // position: fixed;
+  position: absolute;
   width: 320px;
   background-color: $bullet-color!important;
   // transform: translateX(50%);
@@ -9,4 +10,22 @@
   z-index: 100;
   transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
   padding-bottom: 162px;
+}
+
+.nav-open .navbar{
+  // background: red!important;
+  transform: translateX(0);
+  display: block;
+
+}
+.nav-open .hamburger{
+  // background: red!important;
+  background: url('../img/menu-close.svg') no-repeat!important;
+  width: 14px;
+  height: 14px;
+  top: 1px;
+  left: -5px;
+  position: absolute;
+  content: "";
+
 }

@@ -1,0 +1,29 @@
+.nav-toggle {
+  position: relative;
+  cursor: pointer;
+  width: 24px;
+  height: 19px;
+  margin-top: 23px;
+  margin-left: -5px;
+  border: none;
+  background-color: transparent;
+  z-index: 1000;
+
+
+  & .hamburger {
+    top: 1px;
+    left: -5px;
+    position: absolute;
+    content: "";
+    background: url('../img/menu-open.svg') no-repeat;
+    padding: 0;
+    // top: -30px;
+    // left: 267px;
+    width: 24px;
+    height: 19px;
+    // background-size: 22px  14px;
+    border: none;
+    z-index: 1;
+    // cursor: pointer;
+  }
+}

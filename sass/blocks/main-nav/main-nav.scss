@@ -1,7 +1,8 @@
 .main-nav {
   position: relative;
   z-index: 10;
-  margin-top: 30px;
+  margin-top: 27px;
+  margin-left: -5px;
 
   // первый уровень
   &__list {
@@ -18,9 +19,14 @@
 
   &__link {
     display: block;
-    padding: 0.65em 1em;
+    padding: 0.4em 1em;
     text-decoration: none;
     // background-color: #fff;
+    font-style: $font-family--rubik;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: $text-color;
 
     &:hover,
     &:focus {

@@ -1,10 +1,11 @@
 .main-nav {
   position: relative;
   z-index: 10;
+  margin-top: 30px;
 
   // первый уровень
   &__list {
-    display: none;
+    // display: none;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -17,9 +18,9 @@
 
   &__link {
     display: block;
-    padding: 0.5em 1em;
+    padding: 0.65em 1em;
     text-decoration: none;
-    background-color: #fff;
+    // background-color: #fff;
 
     &:hover,
     &:focus {

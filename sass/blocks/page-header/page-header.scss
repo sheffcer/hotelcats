@@ -4,13 +4,20 @@
     @include container;
     outline: 1px dotted #000000;
     min-height: 62px;
+    display: flex;
+    justify-content: space-between;
   }
 
   &__contact {
-    display: none;
+    // display: none;
   }
 
   & .navbar {
     // display: none;
+  }
+
+  &__contact-tel {
+    padding-top: 7px;
+    padding-left: 15px;
   }
 }

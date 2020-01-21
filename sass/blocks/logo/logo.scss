@@ -2,6 +2,8 @@
 
   display: inline-block;
   white-space: nowrap;
+  max-width: 46px;
+  z-index: 110;
 
   &__img {
     margin-top: 11px;

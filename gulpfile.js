@@ -66,9 +66,16 @@ gulp.task("images", function () {
   console.log('---------- Сжатие Images');
   return gulp.src('build/img/**/*.{png,jpg,gif}')
     .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 3}),
-      imagemin.jpegtran({progressive: true})
-    ]))
+      imagemin.gifsicle({interlaced: true}),
+      imagemin.mozjpeg({quality: 75, progressive: true}),
+      imagemin.optipng({optimizationLevel: 5}),
+      imagemin.svgo({
+          plugins: [
+              {removeViewBox: true},
+              {cleanupIDs: false}
+          ]
+      })
+  ]))
 
     .pipe(gulp.dest('build/img'));
 });

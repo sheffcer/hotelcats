@@ -157,7 +157,7 @@ gulp.task('build', function (fn) {
 
 // Отправка в GH pages (ветку gh-pages репозитория)
 
-let ghPagesUrl = 'https://sheffcer.github.io/start-project-SASS/';
+let ghPagesUrl = 'https://sheffcer.github.io/hotelcats/';
 
 gulp.task('deploy', function () {
   console.log('---------- Публикация ./build/ на GH pages');

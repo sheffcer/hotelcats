@@ -1,8 +1,8 @@
 {
-  "name": "start-project-SASS",
+  "name": "hotelcats",
   "version": "1.0.0",
   "private": false,
-  "description": "Стартовый проект «cat-energy",
+  "description": "проект «hotelcats",
   "lint-staged": {
     "*.js": "editorconfig-cli",
     "*.css": "stylelint",
@@ -34,7 +34,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sheffcer/start-project-SASS.git "
+    "url": "https://github.com/sheffcer/hotelcats.git "
   },
   "scripts": {
     "test": "editorconfig-cli",

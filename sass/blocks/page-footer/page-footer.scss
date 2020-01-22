@@ -1,8 +1,0 @@
-.page-footer {
-
-  &__inner {
-    @include container;
-    outline: 1px dotted #000000;
-  }
-  // $block-name:                &; // #{$block-name}__element
-}

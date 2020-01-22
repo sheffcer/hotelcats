@@ -101,6 +101,7 @@ gulp.task('copy', function () {
     '_design/*.jpg',
     'img/**',
     'js/**',
+    'css/**',
     '*.html'
   ], {
     base: '.'

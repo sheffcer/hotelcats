@@ -429,7 +429,8 @@ html {
     width: 24px;
     height: 19px;
     border: none;
-    z-index: 1; }
+    z-index: 1;
+    left: 0; }
   @media (min-width: 320px) {
       .page-header__inner {
         width: 290px;

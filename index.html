@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/style.min.css" />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
   </head>
   <body>
     <header class="page-header">
@@ -24,8 +28,7 @@
           <span class="hamburger"></span>
         </button>
         <div class="navbar">
-        <nav class="main-nav main-nav--closed main-nav--nojs">
-          <!-- <button class="main-nav__toggle" type="button"> </button> -->
+        <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a href="#" class="main-nav__link">Почему мы? </a>
@@ -134,7 +137,7 @@
     <div class="room">
       <div class="room__inner">
         <h3 class="room__header">Номера</h3>
-        <div class="room__grid">
+        <div id="owl" class="owl-carousel owl-theme" class="room__grid">
           <div class="room__item">
             <picture class="room__item-img">
               <source media="(min-width: 1024px)" srcset="img/room_01-desktop.png">
@@ -142,13 +145,44 @@
                 <img src="img/room_01.png" alt="">
           </picture>
           </a>
-            <!-- <img class="room__item-img" src="img/room_01.jpg" alt="" width="290" height="192"> -->
             <h2 class="room__title">Эконом плюс</h2>
             <ul class="list-bullet">
               <li>Площадь - 0,90 м2</li>
               <li>Размеры (ШхГхВ)
                 90х100х180 см</li>
               <li>Цена за сутки: 200₽</li>
+            </ul>
+            <a href="#" class="btn  btn--room">Забронировать</a>
+          </div>
+          <div class="room__item">
+            <picture class="room__item-img">
+              <source media="(min-width: 1024px)" srcset="img/room_02-desktop.png">
+              <source media="(min-width: 768px)" srcset="img/room_02-tablet.png">
+                <img src="img/room_02.png" alt="">
+          </picture>
+          </a>
+            <h2 class="room__title">Комфорт</h2>
+            <ul class="list-bullet">
+              <li>Площадь - 1,13 м2</li>
+              <li>Размеры (ШхГхВ)
+                100х125х180 см</li>
+              <li>Цена за сутки: 250₽</li>
+            </ul>
+            <a href="#" class="btn  btn--room">Забронировать</a>
+          </div>
+          <div class="room__item">
+            <picture class="room__item-img">
+              <source media="(min-width: 1024px)" srcset="img/room_03-desktop.png">
+              <source media="(min-width: 768px)" srcset="img/room_03-tablet.png">
+                <img src="img/room_03.png" alt="">
+          </picture>
+          </a>
+            <h2 class="room__title">Сьют</h2>
+            <ul class="list-bullet">
+              <li>Площадь - 1,56 м2/li>
+              <li>Размеры (ШхГхВ)
+                125х125х180 см</li>
+              <li>Цена за сутки: 350₽</li>
             </ul>
             <a href="#" class="btn  btn--room">Забронировать</a>
           </div>

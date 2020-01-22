@@ -28,6 +28,10 @@
     line-height: rem(14px);
     text-align: center;
     color: $text-color;
+
+    @media (min-width: $screen-md) {
+     padding-top: 125px;
+    }
   }
 
   &__title {
@@ -39,6 +43,11 @@
     line-height: rem(52px);
     color: $text-color;
     text-align: center;
+
+    @media (min-width: $screen-md) {
+      font-size: 62px;
+      line-height: 73px;
+    }
   }
 
   &__description {
@@ -50,5 +59,10 @@
     line-height: rem(19px);
     color: $text-color;
     text-align: center;
+
+    @media (min-width: $screen-md) {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 }

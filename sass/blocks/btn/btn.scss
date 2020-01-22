@@ -60,6 +60,10 @@
     margin: auto;
     width: 209px;
     margin-top: 75px;
+
+    @media (min-width: $screen-md) {
+      margin-top: 17px;
+    }
   }
 
   &--intro::after {

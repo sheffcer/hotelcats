@@ -1,6 +1,10 @@
 .features {
   margin-top: 37px;
 
+  @media (min-width: $screen-md) {
+   margin-top: 0;
+  }
+
   &__inner {
     @include container;
     outline: 1px dotted #000000;
@@ -8,13 +12,17 @@
 
   &__row {
     @include row;
+
+    @media (min-width: $screen-md) {
+      margin-top: 55px;
+    }
   }
 
   &__item {
     outline: 1px dotted pink;
     @include col(xs, 12, $grid-columns, 30px); // малые ширины — 12 из 12, промежутки по умолчанию
     @include col(sm, 12, $grid-columns, 30px); // SM (480 по умолчанию) — 6 из 12, промежутки 10px
-    @include col(md, 4, $grid-columns, 40px); // MD (768 по умолчанию) — 4 из 12, промежутки 12px
+    @include col(md, 6, $grid-columns, 30px); // MD (768 по умолчанию) — 4 из 12, промежутки 12px
     @include col(lg, 3, $grid-columns, 16px); // LG (992 по умолчанию) — 3 из 12, промежутки 16px
     @include col(xl, 2, $grid-columns, 20px); // XL (1200 по умолчанию) — 2 из 12, промежутки 20px
     @include col(xxl, 1, $grid-columns, 26px); // XXL (1800 по умолчанию) — 1 из 12, промежутки 26px
@@ -25,6 +33,11 @@
   &__item-wrap {
     outline: 1px dotted red;
     padding-bottom: 7px;
+
+    @media (min-width: $screen-md) {
+      padding-bottom: 0;
+      height: 285px;
+    }
   }
 
   &__header {
@@ -37,6 +50,12 @@
     padding-top: 22px;
     margin-bottom: 30px;
     color: $text-color;
+
+    @media (min-width: $screen-md) {
+      padding-top: 80px;
+      font-size: 36px;
+      line-height: 43px;
+    }
   }
 
   &__title {
@@ -64,5 +83,10 @@
     margin-left: 25px;
     margin-top: 23px;
     margin-bottom: 7px;
+
+    @media (min-width: $screen-md) {
+      width: 75px;
+      height: 75px;
+    }
   }
 }

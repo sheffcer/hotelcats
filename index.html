@@ -136,7 +136,13 @@
         <h3 class="room__header">Номера</h3>
         <div class="room__grid">
           <div class="room__item">
-            <img class="room__item-img" src="img/room_01.jpg" alt="" width="290" height="192">
+            <picture class="room__item-img">
+              <source media="(min-width: 1024px)" srcset="img/room_01-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/room_01-tablet.jpg">
+                <img src="img/room_01.jpg" alt="" width="290" height="192">
+          </picture>
+          </a>
+            <!-- <img class="room__item-img" src="img/room_01.jpg" alt="" width="290" height="192"> -->
             <h2 class="room__title">Эконом плюс</h2>
             <ul class="list-bullet">
               <li>Площадь - 0,90 м2</li>

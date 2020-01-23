@@ -97,7 +97,7 @@ html {
     background-color: #FF7236;
     margin: auto;
     width: 209px;
-    margin-top: 10px;
+    margin-top: 0;
     color: white !important; }
   .btn--room::after {
     position: absolute;
@@ -225,7 +225,10 @@ html {
   outline: 1px dotted #000000; }
 
 .features {
-  margin-top: 37px; }
+  margin-top: 37px;
+  background: url(../img/paw-background.svg) no-repeat;
+  background-position-x: 275px;
+  background-position-y: 5px; }
   .features__inner {
     display: block;
     width: 290px;
@@ -305,7 +308,10 @@ html {
   outline: 1px dotted #000000; }
 
 .room {
-  margin-top: -40px; }
+  margin-top: -40px;
+  background: url("../img/fish-background.svg") no-repeat;
+  background-position-x: 58px;
+  background-position-y: 60px; }
   .room__inner {
     display: block;
     width: 290px;
@@ -319,7 +325,8 @@ html {
     font-size: 28px;
     line-height: 33px;
     text-align: center;
-    padding-top: 22px; }
+    padding-top: 22px;
+    padding-bottom: 5px; }
   .room__item {
     display: -ms-flexbox;
     display: flex;
@@ -331,7 +338,9 @@ html {
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
-    line-height: 24px; }
+    line-height: 24px;
+    padding-top: 3px;
+    padding-left: 25px; }
 
 .review__inner {
   display: block;
@@ -365,7 +374,9 @@ html {
   content: ""; }
 
 .list-bullet {
-  list-style: none; }
+  list-style: none;
+  margin-top: 0;
+  max-width: 140px; }
   .list-bullet > li {
     position: relative;
     font-family: "Lato-Regular", "Ubuntu", "Droid Sans", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";

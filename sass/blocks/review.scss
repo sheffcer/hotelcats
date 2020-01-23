@@ -1,9 +1,9 @@
 .review {
-  margin-top: 55px;
+  margin-top: 60px;
   min-height: 385px;
   background: url("../img/paw-rotate.svg") no-repeat;
-  background-position-x: 298px;
-  background-position-y: -29px;
+  background-position-x: 290px;
+    background-position-y: -30px;
 
   &__inner {
     @include container;
@@ -37,8 +37,8 @@
     background: url("../img/quote.svg") no-repeat;
     width: 21px;
     height: 25px;
-    left: 42px;
-    top: 34px;
+    left: 27px;
+    top: 20px;
   }
 
   &__text {

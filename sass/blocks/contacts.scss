@@ -2,8 +2,46 @@
 
   &__inner {
     @include container;
-    @include container;
     outline: 1px dotted #000000;
+    background-color: $bullet-color;
+  }
+
+  &__grid {
+    margin-top: 30px;
+  }
+
+  &__social {
+    margin-top: 26px;
+    margin-bottom: 35px;
+  }
+
+  &__social .social {
+    padding-left: 0;
+    margin-top: -10px;
+    margin-left: -5px;
+  }
+
+  &__map {
+    margin-top: 35px;
+    min-height: 300px;
+    width: 320px;
+    height: 300px;
+    margin-left: -15px;
+  }
+
+  &__map-img {
+    position: relative;
+    display: block;
+  }
+
+  &__map-img::before {
+    position: absolute;
+    content: "";
+    background: url("../img/marker.svg") no-repeat;
+    width: 27px;
+    height: 49px;
+    top: 0;
+    left: 0;
   }
 
   &__title {

@@ -26,7 +26,7 @@
     @include col(xs, 12, $grid-columns, 30px); // малые ширины — 12 из 12, промежутки по умолчанию
     @include col(sm, 12, $grid-columns, 30px); // SM (480 по умолчанию) — 6 из 12, промежутки 10px
     @include col(md, 6, $grid-columns, 30px); // MD (768 по умолчанию) — 4 из 12, промежутки 12px
-    @include col(lg, 3, $grid-columns, 16px); // LG (992 по умолчанию) — 3 из 12, промежутки 16px
+    @include col(lg, 4, $grid-columns, 30px); // LG (992 по умолчанию) — 3 из 12, промежутки 16px
     @include col(xl, 2, $grid-columns, 20px); // XL (1200 по умолчанию) — 2 из 12, промежутки 20px
     @include col(xxl, 1, $grid-columns, 26px); // XXL (1800 по умолчанию) — 1 из 12, промежутки 26px
     box-sizing: border-box;
@@ -67,11 +67,12 @@
 
   &__title {
     font-family: $font-family--rubik;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 18px;
     line-height: 140%;
     color: $text-color;
-    text-align: center;
+    padding-left: 25px;
+    // text-align: center;
   }
 
   &__text {

@@ -16,7 +16,7 @@ $('#rooms').owlCarousel({
   loop: true,
   margin: 10,
   lazyLoad: true,
-  autoplay: true,
+  autoplay: false,
   responsiveClass: true,
   responsive: {
       0: {
@@ -38,7 +38,7 @@ $('#rooms').owlCarousel({
       768: {
           items: 1,
           nav: false,
-          dots: false
+          dots: true
       },
       1024: {
           items: 1,
@@ -55,7 +55,7 @@ $('#reviews').owlCarousel({
   loop: true,
   margin: 10,
   lazyLoad: true,
-  autoplay: true,
+  autoplay: false,
   responsiveClass: true,
   responsive: {
       0: {
@@ -77,7 +77,7 @@ $('#reviews').owlCarousel({
       768: {
           items: 1,
           nav: false,
-          dots: false
+          dots: true
       },
       1024: {
           items: 1,

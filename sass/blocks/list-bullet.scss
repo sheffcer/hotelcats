@@ -1,5 +1,7 @@
 .list-bullet {
   list-style: none;
+  margin-top: 0;
+  max-width: 140px;
 
   & > li {
     position: relative;

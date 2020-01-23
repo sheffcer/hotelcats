@@ -7,6 +7,8 @@
 .owl-carousel .owl-item {
   -webkit-tap-highlight-color: transparent;
   position: relative;
+  /* box-shadow: 1px 1px 6px #d3d3d3;
+  border-radius: 6px; */
 }
 
 .owl-carousel {

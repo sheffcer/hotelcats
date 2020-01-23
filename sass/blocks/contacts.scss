@@ -5,4 +5,29 @@
     @include container;
     outline: 1px dotted #000000;
   }
+
+  &__title {
+    padding-top: 33px;
+    font-family: $font-family--rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  &__subtitle {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  &__text {
+    font-family: $font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  }
 }

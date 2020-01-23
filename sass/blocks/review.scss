@@ -1,7 +1,54 @@
 .review {
+  margin-top: 55px;
+  min-height: 385px;
+  background: url("../img/paw-rotate.svg") no-repeat;
+  background-position-x: 298px;
+  background-position-y: -29px;
 
   &__inner {
     @include container;
     outline: 1px dotted #000000;
+  }
+
+  &__header {
+    font-family: $font-family--rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+  }
+
+  &__grid {
+    @include row;
+  }
+
+  &__item {
+    position: relative;
+    @include col(xs, 12, $grid-columns); // малые ширины — 12 из 12, промежутки по умолчанию
+    @include col(sm, 12, $grid-columns, 30px); // SM (480 по умолчанию) — 6 из 12, промежутки 10px
+    box-sizing: border-box;
+    min-height: 230px;
+  }
+
+  &__item::before {
+    position: absolute;
+    content: "";
+    background: url("../img/quote.svg") no-repeat;
+    width: 21px;
+    height: 25px;
+    left: 42px;
+    top: 34px;
+  }
+
+  &__text {
+    max-width: 215px;
+    padding-top: 15px;
+    padding-left: 56px;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 140%;
   }
 }

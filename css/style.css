@@ -10,7 +10,6 @@ body {
   margin: 0;
   min-width: 320px;
   font-family: "Lato-Regular", "Ubuntu", "Droid Sans", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  background: url("../_design/index-mobile.jpg") no-repeat center top;
   min-height: 4379px; }
 
 img {
@@ -136,6 +135,8 @@ html {
     margin-top: 11px; }
   .logo img {
     display: block; }
+  .logo--footer {
+    margin-top: 15px; }
 
 .main-nav {
   position: relative;
@@ -145,8 +146,20 @@ html {
     margin: 0;
     padding: 0;
     list-style: none; }
+  .main-nav__list--footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    max-width: 235px; }
+  .main-nav__list--footer .main-nav__item {
+    min-width: 104px; }
   .main-nav__item {
     position: relative; }
+  .main-nav__item--footer {
+    min-width: 104px; }
   .main-nav__link {
     display: block;
     padding: 0.4em 1em;
@@ -159,6 +172,15 @@ html {
     .main-nav__link:hover, .main-nav__link:focus {
       text-decoration: none;
       background-color: #e6e6e6; }
+  .main-nav__link--footer {
+    padding: .4em .2em;
+    font-family: "Lato-Regular", "Ubuntu", "Droid Sans", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px; }
+  .main-nav--footer {
+    margin-top: 12px; }
   .main-nav__toggle {
     position: absolute;
     content: "";
@@ -177,6 +199,25 @@ html {
   margin-left: auto;
   margin-right: auto;
   outline: 1px dotted #000000; }
+
+.page-footer__copyright {
+  position: relative;
+  margin-top: 35px;
+  font-family: "Lato-Regular", "Ubuntu", "Droid Sans", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #8F8F8F; }
+
+.page-footer__copyright::before {
+  position: absolute;
+  content: "";
+  width: 320px;
+  height: 1px;
+  background-color: #EFEFEF;
+  top: -20px;
+  left: -15px; }
 
 .intro {
   background: url("../img/intro-mobile.jpg") no-repeat center top; }

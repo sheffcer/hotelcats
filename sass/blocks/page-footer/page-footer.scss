@@ -4,5 +4,25 @@
     @include container;
     outline: 1px dotted #000000;
   }
-  // $block-name:                &; // #{$block-name}__element
+
+  &__copyright {
+    position: relative;
+    margin-top: 35px;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #8F8F8F;
+  }
+
+  &__copyright::before {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: $border-color;
+    top: -20px;
+    left: -15px;
+  }
 }

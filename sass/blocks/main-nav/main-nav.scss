@@ -23,9 +23,23 @@
     }
   }
 
+  &__list--footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 235px;
+  }
+
+  &__list--footer .main-nav__item {
+    min-width: 104px;
+  }
+
   &__item {
     position: relative;
+ }
 
+ &__item--footer {
+   min-width: 104px;
  }
 
   &__link {
@@ -51,6 +65,20 @@
     }
 
   }
+
+  &__link--footer {
+    padding: .4em .2em;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &--footer {
+    margin-top: 12px;
+  }
+
 
   // переключатель
 

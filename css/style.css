@@ -227,8 +227,7 @@ html {
 .features {
   margin-top: 37px;
   background: url("../img/paw-background.svg") no-repeat;
-  background-position-x: 275px;
-  background-position-y: 5px; }
+  background-position-x: 295px; }
   .features__inner {
     display: block;
     width: 290px;
@@ -301,11 +300,40 @@ html {
   width: 290px;
   margin-left: auto;
   margin-right: auto;
-  display: block;
-  width: 290px;
-  margin-left: auto;
-  margin-right: auto;
-  outline: 1px dotted #000000; }
+  outline: 1px dotted #000000;
+  background-color: #FAC663; }
+
+.contacts__grid {
+  margin-top: 30px; }
+
+.contacts__social {
+  margin-top: 26px;
+  margin-bottom: 35px; }
+
+.contacts__social .social {
+  padding-left: 0;
+  margin-top: -10px;
+  margin-left: -5px; }
+
+.contacts__map {
+  margin-top: 35px;
+  min-height: 300px;
+  width: 320px;
+  height: 300px;
+  margin-left: -15px; }
+
+.contacts__map-img {
+  position: relative;
+  display: block; }
+
+.contacts__map-img::before {
+  position: absolute;
+  content: "";
+  background: url("../img/marker.svg") no-repeat;
+  width: 27px;
+  height: 49px;
+  top: 0;
+  left: 0; }
 
 .contacts__title {
   padding-top: 33px;
@@ -332,7 +360,7 @@ html {
 .room {
   margin-top: -40px;
   background: url("../img/fish-background.svg") no-repeat;
-  background-position-x: 58px;
+  background-position-x: 75px;
   background-position-y: 60px; }
   .room__inner {
     display: block;
@@ -365,11 +393,11 @@ html {
     padding-left: 25px; }
 
 .review {
-  margin-top: 55px;
+  margin-top: 60px;
   min-height: 385px;
   background: url("../img/paw-rotate.svg") no-repeat;
-  background-position-x: 298px;
-  background-position-y: -29px; }
+  background-position-x: 290px;
+  background-position-y: -30px; }
   .review__inner {
     display: block;
     width: 290px;
@@ -408,8 +436,8 @@ html {
     background: url("../img/quote.svg") no-repeat;
     width: 21px;
     height: 25px;
-    left: 42px;
-    top: 34px; }
+    left: 27px;
+    top: 20px; }
   .review__text {
     max-width: 215px;
     padding-top: 15px;
@@ -544,10 +572,6 @@ html {
       width: 290px;
       padding-left: 15px;
       padding-right: 15px; }
-    .contacts__inner {
-      width: 290px;
-      padding-left: 15px;
-      padding-right: 15px; }
       .room__inner {
         width: 290px;
         padding-left: 15px;
@@ -637,8 +661,6 @@ html {
       width: 678px; }
     .contacts__inner {
       width: 678px; }
-    .contacts__inner {
-      width: 678px; }
       .room__inner {
         width: 678px; }
       .review__inner {
@@ -678,8 +700,6 @@ html {
       width: 930px; }
     .contacts__inner {
       width: 930px; }
-    .contacts__inner {
-      width: 930px; }
       .room__inner {
         width: 930px; }
       .review__inner {
@@ -705,8 +725,6 @@ html {
       width: 1170px; }
     .contacts__inner {
       width: 1170px; }
-    .contacts__inner {
-      width: 1170px; }
       .room__inner {
         width: 1170px; }
       .review__inner {
@@ -729,8 +747,6 @@ html {
         padding-left: 13px;
         padding-right: 13px; }
     .require__inner {
-      width: 1170px; }
-    .contacts__inner {
       width: 1170px; }
     .contacts__inner {
       width: 1170px; }

@@ -14,7 +14,7 @@ $("#rooms").owlCarousel({
   // items: 5,
   merge: true,
   loop: true,
-  margin: 10,
+  // margin: 10,
   lazyLoad: true,
   autoplay: false,
   responsiveClass: true,
@@ -56,7 +56,6 @@ $("#reviews").owlCarousel({
   lazyLoad: true,
   autoplay: false,
   responsiveClass: true,
-  // stagePaddingRight: 100,
   responsive: {
     0: {
       items: 1,

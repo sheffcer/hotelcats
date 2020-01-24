@@ -463,25 +463,28 @@ html {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-left: -15px;
-    margin-right: -15px; }
+    margin-right: -15px;
+    margin: 0; }
     .review__grid > * {
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%; }
   .review__item {
-    position: relative;
-    margin-bottom: 6px;
     -ms-flex: 0 0 100%;
         flex: 0 0 100%;
     max-width: 100%;
     padding-left: 0;
-    padding-right: 0;
+    padding-right: 0; }
+  .review__item-wrap {
+    position: relative;
     box-sizing: border-box;
+    margin-left: 1px;
+    margin-right: 3px;
     min-height: 223px;
     box-shadow: 1px 1px 6px #d3d3d3;
     border-radius: 6px;
-    width: 287px;
+    margin-bottom: 6px;
     background-color: white; }
-  .review__item::before {
+  .review__item-wrap::before {
     position: absolute;
     content: "";
     background: url("../img/quote.svg") no-repeat;
@@ -645,6 +648,12 @@ html {
             flex: 0 0 100%;
         max-width: 100%;
         padding-left: 0;
+        padding-right: 0; }
+      .review__item {
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 0;
         padding-right: 0; } }
   @media (min-width: 768px) {
   body {
@@ -742,10 +751,11 @@ html {
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
         max-width: 100%;
-        padding-left: 15px;
-        padding-right: 15px; }
+        padding-left: 0;
+        padding-right: 0; }
       .review__item {
-        box-sizing: border-box;
+        padding-bottom: 15px; }
+      .review__item-wrap {
         padding-bottom: 15px; }
       .review__author {
         display: -ms-flexbox;
@@ -802,7 +812,13 @@ html {
         padding-left: 0;
         padding-right: 0; }
       .review__inner {
-        width: 930px; } }
+        width: 930px; }
+      .review__item {
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0; } }
   @media (min-width: 1200px) {
       .page-header__inner {
         width: 1170px; }

@@ -425,6 +425,7 @@ html {
     padding-bottom: 25px;
     width: 287px; }
   .room__item-wrap {
+    margin-left: 1px;
     box-shadow: 1px 1px 6px #d3d3d3;
     border-radius: 6px;
     padding-bottom: 15px;
@@ -468,11 +469,12 @@ html {
           flex-basis: 100%; }
   .review__item {
     position: relative;
+    margin-bottom: 6px;
     -ms-flex: 0 0 100%;
         flex: 0 0 100%;
     max-width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0;
+    padding-right: 0;
     box-sizing: border-box;
     min-height: 223px;
     box-shadow: 1px 1px 6px #d3d3d3;
@@ -496,6 +498,8 @@ html {
     font-weight: 500;
     font-size: 15px;
     line-height: 140%; }
+  .review__author {
+    display: none; }
 
 .navbar {
   display: none;
@@ -641,13 +645,7 @@ html {
             flex: 0 0 100%;
         max-width: 100%;
         padding-left: 0;
-        padding-right: 0; }
-      .review__item {
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
-        max-width: 100%;
-        padding-left: 15px;
-        padding-right: 15px; } }
+        padding-right: 0; } }
   @media (min-width: 768px) {
   body {
     min-height: 3892px; }
@@ -718,8 +716,48 @@ html {
       width: 678px; }
       .room__inner {
         width: 678px; }
+      .room__item {
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0; }
+      .room__item {
+        width: 443px;
+        max-height: 335px; }
+      .room__item-wrap {
+        box-shadow: none; }
+    .room__content {
+      position: relative;
+      left: 285px;
+      top: -290px;
+      width: 345px;
+      box-shadow: 1px 1px 6px #d3d3d3;
+      border-radius: 6px;
+      padding: 20px;
+      background-color: white; }
       .review__inner {
         width: 678px; }
+      .review__item {
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px; }
+      .review__item {
+        box-sizing: border-box;
+        padding-bottom: 15px; }
+      .review__author {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        font-family: "Lato-Regular", "Ubuntu", "Droid Sans", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #848484; }
     .navbar {
       display: block;
       position: static;
@@ -757,6 +795,12 @@ html {
       width: 930px; }
       .room__inner {
         width: 930px; }
+      .room__item {
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0; }
       .review__inner {
         width: 930px; } }
   @media (min-width: 1200px) {

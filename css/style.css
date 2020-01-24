@@ -291,7 +291,8 @@ html {
   .features__item-wrap {
     padding-bottom: 7px;
     box-shadow: 1px 1px 6px #d3d3d3;
-    border-radius: 6px; }
+    border-radius: 6px;
+    background-color: white; }
   .features__header {
     font-family: "Rubik-Bold", "Ubuntu", "Droid Sans", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-style: normal;
@@ -644,12 +645,6 @@ html {
         max-width: 100%;
         padding-left: 15px;
         padding-right: 15px; }
-      .room__item {
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
-        max-width: 100%;
-        padding-left: 0;
-        padding-right: 0; }
       .review__item {
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
@@ -742,6 +737,17 @@ html {
         padding-top: 80px;
         font-size: 36px;
         line-height: 43px; }
+      .features__title {
+        font-size: 21px;
+        line-height: 140%;
+        padding-left: 25px;
+        padding-top: 9px;
+        margin: 0; }
+      .features__text {
+        margin-top: 10px;
+        min-width: 260px; }
+    .features__text br {
+      display: none; }
       .features__img {
         width: 75px;
         height: 75px; }
@@ -845,7 +851,6 @@ html {
       display: none; } }
   @media (min-width: 1366px) {
   body {
-    background: url("../_design/index-desktop.jpg") no-repeat center top;
     min-height: 3560px; }
       .btn--intro {
         margin: 0;
@@ -886,7 +891,10 @@ html {
     .about__inner {
       width: 1170px; }
     .features {
-      margin-top: 52px; }
+      margin-top: 52px;
+      background-size: 330px;
+      background-position-x: 1020px;
+      background-position-y: -40px; }
       .features__inner {
         width: 1170px; }
       .features__inner {
@@ -903,9 +911,21 @@ html {
         margin-bottom: 20px; }
       .features__item-wrap {
         height: 321px; }
+      .features__title {
+        padding-left: 28px;
+        padding-top: 18px; }
+      .features__text {
+        font-size: 16px;
+        max-width: 291px;
+        margin-left: 5px;
+        margin-top: 10px; }
+    .features__text br {
+      display: none; }
       .features__img {
         width: 91px;
-        height: 91px; }
+        height: 91px;
+        margin-left: 30px;
+        margin-top: 27px; }
     .require__inner {
       width: 1170px; }
     .require__inner {
@@ -914,6 +934,8 @@ html {
       width: 1170px; }
     .contacts__inner {
       width: 1170px; }
+    .room {
+      margin-top: 86px; }
       .room__inner {
         width: 1170px; }
       .room__inner {

@@ -20,6 +20,13 @@
     // outline: 1px dotted #000000;
   }
 
+  &__grid {
+    @media (min-width: $screen-lg) {
+
+    }
+
+  }
+
   &__header {
     font-family: $font-family--rubik;
     font-style: normal;
@@ -51,6 +58,12 @@
       width: 443px;
       max-height: 335px;
     }
+
+    @media (min-width: $screen-lg) {
+      width: 600px;
+      max-height: 415px;
+      margin-left: 90px;
+    }
     // background-color: $border-color;
   }
 
@@ -77,7 +90,16 @@
     padding-left: 25px;
   }
 
+  &__text {
+    font-size: $font-family;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 140%;
+  }
+
   &__content {
+    padding-left: 20px;
+
     @media (min-width: $screen-md) {
       position: relative;
       left: 285px;
@@ -87,6 +109,19 @@
       border-radius: 6px;
       padding: 20px;
       background-color: $body-bg;
+    }
+
+    @media (min-width: $screen-lg) {
+      left: 500px;
+      box-sizing: border-box;
+      top: -345px;
+      width: 500px;
+      padding-top: 40px;
+      padding-left: 0;
+      padding-left: 100px;
+      padding-bottom: 40px;
+      padding-right: 117px;
+      background-color: #fff;
     }
   }
 }

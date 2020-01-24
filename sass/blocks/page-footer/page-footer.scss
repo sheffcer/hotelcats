@@ -47,5 +47,9 @@
       width: 678px;
       left: 0;
     }
+
+    @media (min-width: $screen-lg) {
+      width: 1170px;
+    }
   }
 }

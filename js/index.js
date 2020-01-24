@@ -40,7 +40,7 @@ $("#rooms").owlCarousel({
       nav: false,
       dots: true
     },
-    1024: {
+    1366: {
       items: 1,
       nav: false,
       loop: true
@@ -78,8 +78,8 @@ $("#reviews").owlCarousel({
       nav: false,
       dots: true
     },
-    1024: {
-      items: 1,
+    1366: {
+      items: 3,
       nav: false,
       loop: true
     }

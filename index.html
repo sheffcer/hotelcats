@@ -149,7 +149,6 @@
               <source media="(min-width: 768px)" srcset="img/room_01-tablet.png">
               <img src="img/room_01.png" alt="">
             </picture>
-            <!-- </a> -->
             <div class="room__content">
               <h2 class="room__title">Эконом плюс</h2>
               <ul class="list-bullet">
@@ -169,7 +168,6 @@
               <source media="(min-width: 768px)" srcset="img/room_02-tablet.png">
               <img src="img/room_02.png" alt="">
             </picture>
-            <!-- </a> -->
             <div class="room__content">
               <h2 class="room__title">Комфорт</h2>
               <ul class="list-bullet">
@@ -189,7 +187,6 @@
               <source media="(min-width: 768px)" srcset="img/room_03-tablet.png">
               <img src="img/room_03.png" alt="">
             </picture>
-            <!-- </a> -->
             <div class="room__content">
               <h2 class="room__title">Сьют</h2>
               <ul class="list-bullet">
@@ -302,7 +299,11 @@
         </ul>
       </div>
       <div class="contacts__map">
-        <img class="contacts__map-img" src="img/map-mobile.jpg" alt="map-mobile">
+        <picture class="contacts__map-img">
+          <source media="(min-width: 1024px)" srcset="img/map-desktop.jpg">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.jpg">
+            <img src="img/map-mobile.jpg" alt="map">
+        </picture>
       </div>
     </div>
   </div>

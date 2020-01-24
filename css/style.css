@@ -368,8 +368,8 @@ html {
   background: url("../img/marker.svg") no-repeat;
   width: 27px;
   height: 49px;
-  top: 0;
-  left: 0; }
+  top: 100px;
+  left: 130px; }
 
 .contacts__title {
   padding-top: 33px;

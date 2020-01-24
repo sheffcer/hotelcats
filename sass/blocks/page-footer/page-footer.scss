@@ -5,6 +5,15 @@
     // outline: 1px dotted #000000;
   }
 
+  &__wrap {
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
   &__copyright {
     position: relative;
     margin-top: 35px;
@@ -14,6 +23,14 @@
     font-size: 12px;
     line-height: 14px;
     color: #8F8F8F;
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
   }
 
   &__copyright::before {
@@ -24,5 +41,10 @@
     background-color: $border-color;
     top: -20px;
     left: -15px;
+
+    @media (min-width: $screen-md) {
+      width: 678px;
+      left: 0;
+    }
   }
 }

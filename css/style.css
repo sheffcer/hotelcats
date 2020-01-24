@@ -659,7 +659,6 @@ html {
         padding-right: 0; } }
   @media (min-width: 768px) {
   body {
-    background: url("../_design/index-tablet.jpg") no-repeat center top;
     min-height: 3892px; }
       .btn--intro {
         margin-top: 17px; }
@@ -845,21 +844,35 @@ html {
       background-color: #FFFEFD !important; }
     .nav-toggle {
       display: none; } }
-  @media (min-width: 1024px) {
+  @media (min-width: 1366px) {
   body {
+    background: url("../_design/index-desktop.jpg") no-repeat center top;
     min-height: 3560px; }
       .page-header__inner {
-        width: 930px; }
+        width: 1170px; }
+      .page-header__inner {
+        width: 1170px; }
+      .page-header__inner {
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
     .page-footer__inner {
-      width: 930px; }
+      width: 1170px; }
+    .page-footer__inner {
+      width: 1170px; }
     .intro {
       background: url("../img/intro-desktop.jpg") no-repeat center top; }
       .intro__inner {
-        width: 930px; }
+        width: 1170px; }
+      .intro__inner {
+        width: 1170px; }
     .about__inner {
-      width: 930px; }
+      width: 1170px; }
+    .about__inner {
+      width: 1170px; }
       .features__inner {
-        width: 930px; }
+        width: 1170px; }
+      .features__inner {
+        width: 1170px; }
       .features__item {
         -ms-flex: 0 0 33.33333%;
             flex: 0 0 33.33333%;
@@ -867,11 +880,17 @@ html {
         padding-left: 15px;
         padding-right: 15px; }
     .require__inner {
-      width: 930px; }
+      width: 1170px; }
+    .require__inner {
+      width: 1170px; }
     .contacts__inner {
-      width: 930px; }
+      width: 1170px; }
+    .contacts__inner {
+      width: 1170px; }
       .room__inner {
-        width: 930px; }
+        width: 1170px; }
+      .room__inner {
+        width: 1170px; }
       .room__item {
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
@@ -879,14 +898,16 @@ html {
         padding-left: 0;
         padding-right: 0; }
       .review__inner {
-        width: 930px; }
+        width: 1170px; }
+      .review__inner {
+        width: 1170px; }
       .review__item {
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
         max-width: 100%;
         padding-left: 0;
         padding-right: 0; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1800px) {
       .page-header__inner {
         width: 1170px; }
     .page-footer__inner {
@@ -897,37 +918,6 @@ html {
       width: 1170px; }
       .features__inner {
         width: 1170px; }
-      .features__item {
-        -ms-flex: 0 0 16.66667%;
-            flex: 0 0 16.66667%;
-        max-width: 16.66667%;
-        padding-left: 10px;
-        padding-right: 10px; }
-    .require__inner {
-      width: 1170px; }
-    .contacts__inner {
-      width: 1170px; }
-      .room__inner {
-        width: 1170px; }
-      .review__inner {
-        width: 1170px; } }
-  @media (min-width: 2500px) {
-      .page-header__inner {
-        width: 1170px; }
-    .page-footer__inner {
-      width: 1170px; }
-      .intro__inner {
-        width: 1170px; }
-    .about__inner {
-      width: 1170px; }
-      .features__inner {
-        width: 1170px; }
-      .features__item {
-        -ms-flex: 0 0 8.33333%;
-            flex: 0 0 8.33333%;
-        max-width: 8.33333%;
-        padding-left: 13px;
-        padding-right: 13px; }
     .require__inner {
       width: 1170px; }
     .contacts__inner {

@@ -440,6 +440,13 @@ html {
     line-height: 24px;
     padding-top: 3px;
     padding-left: 25px; }
+  .room__text {
+    font-size: "Lato-Regular", "Ubuntu", "Droid Sans", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 140%; }
+  .room__content {
+    padding-left: 20px; }
 
 .review {
   margin-top: 60px;
@@ -797,15 +804,15 @@ html {
         max-height: 335px; }
       .room__item-wrap {
         box-shadow: none; }
-    .room__content {
-      position: relative;
-      left: 285px;
-      top: -290px;
-      width: 345px;
-      box-shadow: 1px 1px 6px #d3d3d3;
-      border-radius: 6px;
-      padding: 20px;
-      background-color: white; }
+      .room__content {
+        position: relative;
+        left: 285px;
+        top: -290px;
+        width: 345px;
+        box-shadow: 1px 1px 6px #d3d3d3;
+        border-radius: 6px;
+        padding: 20px;
+        background-color: white; }
     .review {
       margin-top: 100px; }
     .review {
@@ -867,6 +874,8 @@ html {
       width: 1170px; }
     .page-footer__inner {
       width: 1170px; }
+    .page-footer__copyright::before {
+      width: 1170px; }
     .intro {
       background: url("../img/intro-desktop.jpg") no-repeat center top; }
       .intro__inner {
@@ -893,7 +902,7 @@ html {
     .features {
       margin-top: 52px;
       background-size: 330px;
-      background-position-x: 1020px;
+      background-position-x: 1060px;
       background-position-y: -40px; }
       .features__inner {
         width: 1170px; }
@@ -946,6 +955,21 @@ html {
         max-width: 100%;
         padding-left: 0;
         padding-right: 0; }
+      .room__item {
+        width: 600px;
+        max-height: 415px;
+        margin-left: 90px; }
+      .room__content {
+        left: 500px;
+        box-sizing: border-box;
+        top: -345px;
+        width: 500px;
+        padding-top: 40px;
+        padding-left: 0;
+        padding-left: 100px;
+        padding-bottom: 40px;
+        padding-right: 117px;
+        background-color: #fff; }
       .review__inner {
         width: 1170px; }
       .review__inner {

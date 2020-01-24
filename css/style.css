@@ -10,7 +10,6 @@ body {
   margin: 0;
   min-width: 320px;
   font-family: "Lato-Regular", "Ubuntu", "Droid Sans", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  min-height: 4379px;
   background-color: #FFFEFD !important; }
 
 img {
@@ -340,6 +339,9 @@ html {
   background-color: #FAC663; }
 
 .contacts__grid {
+  display: block; }
+
+.contacts__adress {
   margin-top: 30px; }
 
 .contacts__social {
@@ -656,8 +658,6 @@ html {
         padding-left: 0;
         padding-right: 0; } }
   @media (min-width: 768px) {
-  body {
-    min-height: 3892px; }
       .btn--intro {
         margin-top: 17px; }
       .page-header__inner {
@@ -681,6 +681,27 @@ html {
         line-height: 19px; }
     .page-footer__inner {
       width: 678px; }
+  .page-footer__wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center; }
+    .page-footer__copyright {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      -ms-flex-align: center;
+          align-items: center; }
+    .page-footer__copyright::before {
+      width: 678px;
+      left: 0; }
     .intro {
       background: url("../img/intro-tablet.jpg") no-repeat center top; }
       .intro__inner {
@@ -698,7 +719,9 @@ html {
     .about__inner {
       width: 678px; }
     .features {
-      margin-top: 0; }
+      margin-top: 0;
+      background-position-x: 555px;
+      background-size: 300px 257px; }
       .features__inner {
         width: 678px; }
       .features__row {
@@ -723,6 +746,27 @@ html {
       width: 678px; }
     .contacts__inner {
       width: 678px; }
+    .contacts__grid {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+    .contacts__adress {
+      margin-top: 0; }
+    .contacts__map {
+      margin: 0;
+      margin-top: -90px;
+      width: auto;
+      height: auto;
+      margin-bottom: -4px; }
+    .contacts__map-img {
+      margin: 0; }
+    .room {
+      background-size: 339px 109px;
+      background-position-x: 45px;
+      background-position-y: 35px; }
       .room__inner {
         width: 678px; }
       .room__item {
@@ -745,6 +789,10 @@ html {
       border-radius: 6px;
       padding: 20px;
       background-color: white; }
+    .review {
+      background-position-x: 575px;
+      background-position-y: -30px;
+      background-size: 300px 257px; }
       .review__inner {
         width: 678px; }
       .review__item {

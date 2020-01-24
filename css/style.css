@@ -214,7 +214,7 @@ html {
   width: 320px;
   height: 1px;
   background-color: #EFEFEF;
-  top: -20px;
+  top: -7px;
   left: -15px; }
 
 .intro {
@@ -658,6 +658,9 @@ html {
         padding-left: 0;
         padding-right: 0; } }
   @media (min-width: 768px) {
+  body {
+    background: url("../_design/index-tablet.jpg") no-repeat center top;
+    min-height: 3892px; }
       .btn--intro {
         margin-top: 17px; }
       .page-header__inner {
@@ -677,6 +680,7 @@ html {
         display: flex;
         min-width: 430px; }
       .main-nav__link {
+        font-weight: 600;
         font-size: 16px;
         line-height: 19px; }
     .page-footer__inner {
@@ -691,6 +695,7 @@ html {
     -ms-flex-align: center;
         align-items: center; }
     .page-footer__copyright {
+      margin-top: 22px;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: row;
@@ -744,6 +749,8 @@ html {
         height: 75px; }
     .require__inner {
       width: 678px; }
+  .contacts {
+    margin-top: 60px; }
     .contacts__inner {
       width: 678px; }
     .contacts__grid {
@@ -762,13 +769,19 @@ html {
       height: auto;
       margin-bottom: -4px; }
     .contacts__map-img {
-      margin: 0; }
+      margin: 0;
+      left: 15px; }
     .room {
+      margin-top: 57px;
       background-size: 339px 109px;
-      background-position-x: 45px;
-      background-position-y: 35px; }
+      background-position-x: 48px;
+      background-position-y: 59px; }
       .room__inner {
         width: 678px; }
+      .room__header {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 43px; }
       .room__item {
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
@@ -790,11 +803,17 @@ html {
       padding: 20px;
       background-color: white; }
     .review {
+      margin-top: 100px; }
+    .review {
       background-position-x: 575px;
       background-position-y: -30px;
       background-size: 300px 257px; }
       .review__inner {
         width: 678px; }
+      .review__header {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 43px; }
       .review__item {
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
@@ -814,7 +833,7 @@ html {
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
-        line-height: 17px;
+        line-height: 120%;
         color: #848484; }
     .navbar {
       display: block;

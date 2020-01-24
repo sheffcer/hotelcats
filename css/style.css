@@ -659,8 +659,6 @@ html {
         padding-left: 0;
         padding-right: 0; } }
   @media (min-width: 768px) {
-  body {
-    min-height: 3892px; }
       .btn--intro {
         margin-top: 17px; }
       .page-header__inner {
@@ -857,8 +855,6 @@ html {
     .nav-toggle {
       display: none; } }
   @media (min-width: 1366px) {
-  body {
-    min-height: 3560px; }
       .btn--intro {
         margin: 0;
         margin-left: 98px;

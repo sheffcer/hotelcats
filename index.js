@@ -52,7 +52,7 @@ $("#reviews").owlCarousel({
   // items: 5,
   merge: true,
   loop: true,
-  // margin: 10,
+  margin: 10,
   lazyLoad: true,
   autoplay: false,
   responsiveClass: true,

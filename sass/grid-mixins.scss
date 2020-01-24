@@ -1,14 +1,16 @@
 $screen-xs:                   320px !default;
 $screen-sm:                   480px !default;
 $screen-md:                   768px !default;
-$screen-lg:                   1024px !default;
-$screen-xl:                   1200px !default;
+$screen-lg:                   1366px !default;
+$screen-xl:                   1366px !default;
+// $screen-xl:                   1200px !default;
 $screen-xxl:                  1800px !default;
 
 $container-xs:                ($screen-xs - 30) !default;
 $container-sm:                ($screen-sm - 30) !default;
-$container-lg:                ($screen-lg - 90) !default;
-$container-xl:                ($screen-xl - 94) !default;
+$container-md:                ($screen-md - 90) !default;
+$container-lg:                ($screen-lg - 196) !default;
+$container-xl:                1170px !default;
 $container-xxl:               1170px !default;
 
 $grid-columns:                12 !default;

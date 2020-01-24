@@ -29,8 +29,8 @@
     @include col(sm, 12, $grid-columns, 30px); // SM (480 по умолчанию) — 6 из 12, промежутки 10px
     @include col(md, 6, $grid-columns, 30px); // MD (768 по умолчанию) — 4 из 12, промежутки 12px
     @include col(lg, 4, $grid-columns, 30px); // LG (992 по умолчанию) — 3 из 12, промежутки 16px
-    @include col(xl, 2, $grid-columns, 20px); // XL (1200 по умолчанию) — 2 из 12, промежутки 20px
-    @include col(xxl, 1, $grid-columns, 26px); // XXL (1800 по умолчанию) — 1 из 12, промежутки 26px
+    // @include col(xl, 2, $grid-columns, 20px); // XL (1200 по умолчанию) — 2 из 12, промежутки 20px
+    // @include col(xxl, 1, $grid-columns, 26px); // XXL (1800 по умолчанию) — 1 из 12, промежутки 26px
     box-sizing: border-box;
     margin-bottom: 30px;
 

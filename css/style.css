@@ -681,7 +681,7 @@ html {
         line-height: 19px; }
     .page-footer__inner {
       width: 678px; }
-  .page-footer__wrap {
+  .page-footer-wrap {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;

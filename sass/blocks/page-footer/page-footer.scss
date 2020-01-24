@@ -5,7 +5,7 @@
     // outline: 1px dotted #000000;
   }
 
-  &__wrap {
+  &-wrap {
     @media (min-width: $screen-md) {
       display: flex;
       flex-direction: row;
@@ -25,6 +25,7 @@
     color: #8F8F8F;
 
     @media (min-width: $screen-md) {
+      margin-top: 22px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -39,7 +40,7 @@
     width: 320px;
     height: 1px;
     background-color: $border-color;
-    top: -20px;
+    top: -7px;
     left: -15px;
 
     @media (min-width: $screen-md) {

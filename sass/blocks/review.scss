@@ -1,4 +1,8 @@
 .review {
+  @media (min-width: $screen-md) {
+    margin-top: 100px;
+  }
+
   margin-top: 60px;
   min-height: 385px;
   background: url("../img/paw-rotate.svg") no-repeat;
@@ -24,6 +28,12 @@
     font-size: 28px;
     line-height: 33px;
     text-align: center;
+
+    @media (min-width: $screen-md) {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 43px;
+    }
   }
 
   &__grid {
@@ -92,7 +102,7 @@
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
-      line-height: 17px;
+      line-height: 120%;
       color: $author-color;
     }
   }

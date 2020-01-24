@@ -5,9 +5,10 @@
   background-position-y: 60px;
 
   @media (min-width: $screen-md) {
+    margin-top: 57px;
     background-size: 339px 109px;
-    background-position-x: 45px;
-    background-position-y: 35px;
+    background-position-x: 48px;
+    background-position-y: 59px;
   }
 
   &__inner {
@@ -24,6 +25,12 @@
     text-align: center;
     padding-top: 22px;
     padding-bottom: 5px;
+
+    @media (min-width: $screen-md) {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 43px;
+    }
   }
 
   &__item {

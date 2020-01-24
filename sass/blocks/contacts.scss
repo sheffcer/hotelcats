@@ -1,5 +1,9 @@
 .contacts {
 
+  @media (min-width: $screen-md) {
+    margin-top: 60px;
+  }
+
   &__inner {
     @include container;
     // outline: 1px dotted #000000;
@@ -56,6 +60,7 @@
 &__map-img {
   @media (min-width: $screen-md) {
     margin: 0;
+    left: 15px;
   }
 
   position: relative;

@@ -10,6 +10,10 @@
     background-size: 300px 257px;
   }
 
+  @media (min-width: $screen-lg) {
+    margin-top: 52px;
+  }
+
   &__inner {
     @include container;
     // outline: 1px dotted #000000;
@@ -20,6 +24,10 @@
 
     @media (min-width: $screen-md) {
       margin-top: 55px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-top: 63px;
     }
   }
 
@@ -34,6 +42,10 @@
     box-sizing: border-box;
     margin-bottom: 30px;
 
+    @media (min-width: $screen-lg) {
+      margin-bottom: 20px;
+    }
+
   }
 
   &__item-wrap {
@@ -41,11 +53,15 @@
     padding-bottom: 7px;
     box-shadow: 1px 1px 6px #d3d3d3;
     border-radius: 6px;
-    background-color: $body-bg;
+    // background-color: $body-bg;
 
     @media (min-width: $screen-md) {
       padding-bottom: 0;
       height: 285px;
+    }
+
+    @media (min-width: $screen-lg) {
+      height: 321px;
     }
   }
 
@@ -97,6 +113,11 @@
     @media (min-width: $screen-md) {
       width: 75px;
       height: 75px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 91px;
+      height: 91px;
     }
   }
 }

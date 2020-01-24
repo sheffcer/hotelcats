@@ -64,6 +64,12 @@
     @media (min-width: $screen-md) {
       margin-top: 17px;
     }
+
+    @media (min-width: $screen-lg) {
+      margin: 0;
+      margin-left: 98px;
+      margin-top: 15px;
+    }
   }
 
   &--intro::after {

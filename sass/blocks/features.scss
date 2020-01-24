@@ -12,6 +12,10 @@
 
   @media (min-width: $screen-lg) {
     margin-top: 52px;
+    background-size: 330px;
+    background-position-x: 1020px;
+    background-position-y: -40px;
+
   }
 
   &__inner {
@@ -53,7 +57,7 @@
     padding-bottom: 7px;
     box-shadow: 1px 1px 6px #d3d3d3;
     border-radius: 6px;
-    // background-color: $body-bg;
+    background-color: $body-bg;
 
     @media (min-width: $screen-md) {
       padding-bottom: 0;
@@ -91,6 +95,20 @@
     color: $text-color;
     padding-left: 25px;
     // text-align: center;
+
+    @media (min-width: $screen-md) {
+      font-size: 21px;
+      line-height: 140%;
+      padding-left: 25px;
+      padding-top: 9px;
+      margin: 0;
+    }
+
+    @media (min-width: $screen-lg) {
+      // margin: 0;
+      padding-left: 28px;
+      padding-top: 18px;
+    }
   }
 
   &__text {
@@ -103,6 +121,29 @@
     font-size: 15px;
     line-height: 140%;
     color: $text-color;
+
+    @media (min-width: $screen-md) {
+      margin-top: 10px;
+      min-width: 260px;
+    }
+
+    @media (min-width: $screen-lg) {
+      font-size: 16px;
+      max-width: 291px;
+      margin-left: 5px;
+      margin-top: 10px;
+    }
+  }
+
+  &__text br {
+
+    @media (min-width: $screen-md) {
+      display: none;
+    }
+
+    @media (min-width: $screen-lg) {
+      display: none;
+    }
   }
 
   &__img {
@@ -118,6 +159,8 @@
     @media (min-width: $screen-lg) {
       width: 91px;
       height: 91px;
+      margin-left: 30px;
+      margin-top: 27px;
     }
   }
 }

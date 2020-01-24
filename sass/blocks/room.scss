@@ -11,6 +11,10 @@
     background-position-y: 59px;
   }
 
+  @media (min-width: $screen-lg) {
+    margin-top: 86px;
+  }
+
   &__inner {
     @include container;
     // outline: 1px dotted #000000;
@@ -35,9 +39,9 @@
 
   &__item {
     @include col(xs, 12, $grid-columns, 0); // малые ширины — 12 из 12, промежутки по умолчанию
-    @include col(sm, 12, $grid-columns, 0); // SM (480 по умолчанию) — 6 из 12, промежутки 10px
-    @include col(md, 12, $grid-columns, 0); // SM (480 по умолчанию) — 6 из 12, промежутки 10px
-    @include col(lg, 12, $grid-columns, 0); // SM (480 по умолчанию) — 6 из 12, промежутки 10px
+    // @include col(sm, 12, $grid-columns, 0); // SM (480 по умолчанию) — 6 из 12, промежутки 10px
+    @include col(md, 12, $grid-columns, 0);
+    @include col(lg, 12, $grid-columns, 0);
     display: flex;
     flex-direction: column;
     padding-bottom: 25px;

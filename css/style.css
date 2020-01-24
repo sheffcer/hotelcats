@@ -291,8 +291,7 @@ html {
   .features__item-wrap {
     padding-bottom: 7px;
     box-shadow: 1px 1px 6px #d3d3d3;
-    border-radius: 6px;
-    background-color: white; }
+    border-radius: 6px; }
   .features__header {
     font-family: "Rubik-Bold", "Ubuntu", "Droid Sans", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-style: normal;
@@ -848,13 +847,17 @@ html {
   body {
     background: url("../_design/index-desktop.jpg") no-repeat center top;
     min-height: 3560px; }
+      .btn--intro {
+        margin: 0;
+        margin-left: 98px;
+        margin-top: 15px; }
       .page-header__inner {
         width: 1170px; }
       .page-header__inner {
         width: 1170px; }
       .page-header__inner {
-        -ms-flex-pack: distribute;
-            justify-content: space-around; }
+        -ms-flex-pack: safe;
+            justify-content: safe; }
     .page-footer__inner {
       width: 1170px; }
     .page-footer__inner {
@@ -865,20 +868,44 @@ html {
         width: 1170px; }
       .intro__inner {
         width: 1170px; }
+      .intro__inner {
+        padding-bottom: 46px; }
+      .intro__text {
+        padding-top: 140px;
+        text-align: left;
+        padding-left: 100px; }
+      .intro__title {
+        font-weight: 600;
+        text-align: left;
+        padding-left: 117px; }
+      .intro__description {
+        text-align: left;
+        padding-left: 100px; }
     .about__inner {
       width: 1170px; }
     .about__inner {
       width: 1170px; }
+    .features {
+      margin-top: 52px; }
       .features__inner {
         width: 1170px; }
       .features__inner {
         width: 1170px; }
+      .features__row {
+        margin-top: 63px; }
       .features__item {
         -ms-flex: 0 0 33.33333%;
             flex: 0 0 33.33333%;
         max-width: 33.33333%;
         padding-left: 15px;
         padding-right: 15px; }
+      .features__item {
+        margin-bottom: 20px; }
+      .features__item-wrap {
+        height: 321px; }
+      .features__img {
+        width: 91px;
+        height: 91px; }
     .require__inner {
       width: 1170px; }
     .require__inner {

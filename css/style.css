@@ -97,7 +97,9 @@ html {
     margin: auto;
     width: 209px;
     margin-top: 0;
-    color: white !important; }
+    color: white !important;
+    -ms-flex-negative: 0;
+        flex-shrink: 0; }
   .btn--room::after {
     position: absolute;
     content: "";
@@ -395,17 +397,93 @@ html {
   font-size: 15px;
   line-height: 18px; }
 
-.room {
+.room__inner {
+  display: block;
+  width: 290px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.room__item {
+  -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  min-height: 428px; }
+
+.room__item .btn {
+  margin-bottom: 25px; }
+
+.room__item-wrap {
+  border: 1px solid #E1E1E1;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin-bottom: 20px;
+  border-radius: 6px; }
+
+.room__img-wrap {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: block;
+  margin-bottom: 20px; }
+
+.room__header {
+  font-family: "Rubik-Bold", "Ubuntu", "Droid Sans", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 33px; }
+
+.room__content-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  max-width: 216px;
+  font-family: "Lato-Regular", "Ubuntu", "Droid Sans", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px; }
+
+.room__content-list span {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px; }
+
+.room__title {
+  font-family: "Rubik-Bold", "Ubuntu", "Droid Sans", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px; }
+
+.room-slider {
   margin-top: -40px;
   background: url("../img/fish-background.svg") no-repeat;
   background-position-x: 75px;
   background-position-y: 60px; }
-  .room__inner {
+  .room-slider__inner {
     display: block;
     width: 290px;
     margin-left: auto;
     margin-right: auto; }
-  .room__header {
+  .room-slider__header {
     font-family: "Rubik-Bold", "Ubuntu", "Droid Sans", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-style: normal;
     font-weight: bold;
@@ -414,7 +492,7 @@ html {
     text-align: center;
     padding-top: 22px;
     padding-bottom: 5px; }
-  .room__item {
+  .room-slider__item {
     -ms-flex: 0 0 100%;
         flex: 0 0 100%;
     max-width: 100%;
@@ -426,13 +504,13 @@ html {
         flex-direction: column;
     padding-bottom: 25px;
     width: 287px; }
-  .room__item-wrap {
+  .room-slider__item-wrap {
     margin-left: 1px;
     box-shadow: 1px 1px 6px #d3d3d3;
     border-radius: 6px;
     padding-bottom: 15px;
     background-color: white; }
-  .room__title {
+  .room-slider__title {
     font-family: "Rubik-Bold", "Ubuntu", "Droid Sans", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-style: normal;
     font-weight: 600;
@@ -440,12 +518,12 @@ html {
     line-height: 24px;
     padding-top: 3px;
     padding-left: 25px; }
-  .room__text {
+  .room-slider__text {
     font-size: "Lato-Regular", "Ubuntu", "Droid Sans", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: normal;
     font-size: 15px;
     line-height: 140%; }
-  .room__content {
+  .room-slider__content {
     padding-left: 20px; }
 
 .review {
@@ -637,7 +715,11 @@ html {
       width: 290px;
       padding-left: 15px;
       padding-right: 15px; }
-      .room__inner {
+    .room__inner {
+      width: 290px;
+      padding-left: 15px;
+      padding-right: 15px; }
+      .room-slider__inner {
         width: 290px;
         padding-left: 15px;
         padding-right: 15px; }
@@ -780,29 +862,51 @@ html {
     .contacts__map-img {
       margin: 0;
       left: 15px; }
-    .room {
+    .room__inner {
+      width: 678px; }
+  .room__grid {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    .room__grid > * {
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%; }
+    .room__item {
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+      max-width: 50%;
+      padding-left: 0;
+      padding-right: 0; }
+    .room__item {
+      min-height: 428px; }
+    .room-slider {
       margin-top: 57px;
       background-size: 339px 109px;
       background-position-x: 48px;
       background-position-y: 59px; }
-      .room__inner {
+      .room-slider__inner {
         width: 678px; }
-      .room__header {
+      .room-slider__header {
         font-weight: 600;
         font-size: 36px;
         line-height: 43px; }
-      .room__item {
+      .room-slider__item {
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
         max-width: 100%;
         padding-left: 0;
         padding-right: 0; }
-      .room__item {
+      .room-slider__item {
         width: 443px;
         max-height: 335px; }
-      .room__item-wrap {
+      .room-slider__item-wrap {
         box-shadow: none; }
-      .room__content {
+      .room-slider__content {
         position: relative;
         left: 285px;
         top: -290px;
@@ -939,23 +1043,33 @@ html {
       width: 1170px; }
     .contacts__inner {
       width: 1170px; }
-    .room {
+    .room__inner {
+      width: 1170px; }
+    .room__inner {
+      width: 1170px; }
+    .room__item {
+      -ms-flex: 0 0 33.33333%;
+          flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+      padding-left: 0;
+      padding-right: 0; }
+    .room-slider {
       margin-top: 86px; }
-      .room__inner {
+      .room-slider__inner {
         width: 1170px; }
-      .room__inner {
+      .room-slider__inner {
         width: 1170px; }
-      .room__item {
+      .room-slider__item {
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
         max-width: 100%;
         padding-left: 0;
         padding-right: 0; }
-      .room__item {
+      .room-slider__item {
         width: 600px;
         max-height: 415px;
         margin-left: 90px; }
-      .room__content {
+      .room-slider__content {
         left: 500px;
         box-sizing: border-box;
         top: -345px;
@@ -991,7 +1105,9 @@ html {
       width: 1170px; }
     .contacts__inner {
       width: 1170px; }
-      .room__inner {
+    .room__inner {
+      width: 1170px; }
+      .room-slider__inner {
         width: 1170px; }
       .review__inner {
         width: 1170px; } }

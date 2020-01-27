@@ -454,7 +454,6 @@ html {
   list-style: none;
   padding: 0;
   margin-top: 0;
-  max-width: 216px;
   font-family: "Lato-Regular", "Ubuntu", "Droid Sans", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-style: normal;
   font-weight: normal;
@@ -472,6 +471,12 @@ html {
   font-weight: 600;
   font-size: 20px;
   line-height: 24px; }
+
+.room__icons {
+  margin-left: 10px; }
+
+.room__icons img {
+  margin-right: 5px; }
 
 .room-slider {
   margin-top: -40px;

@@ -64,7 +64,7 @@
     list-style: none;
     padding: 0;
     margin-top: 0;
-    max-width: 216px;
+    // max-width: 216px;
     font-family: $font-family;
     font-style: normal;
     font-weight: normal;
@@ -78,11 +78,26 @@
     line-height: 22px;
   }
 
+  &__content-list li {
+    margin-bottom: 8px;
+  }
+
   &__title {
     font-family: $font-family--rubik;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
+  }
+
+  &__icons {
+    margin-left: 10px;
+    // max-width: 10px;
+    // display: flex;
+    // justify-content: flex-start;
+  }
+
+  &__icons img {
+    margin-right: 5px;
   }
 }

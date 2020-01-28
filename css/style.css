@@ -109,6 +109,24 @@ html {
     top: 7px;
     left: 194px;
     z-index: 10; }
+  .btn--filter {
+    position: relative;
+    width: 111px;
+    padding: 0;
+    border: 0;
+    box-shadow: 1px 1px 6px #d3d3d3;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px; }
+  .btn--filter::before {
+    position: absolute;
+    content: "";
+    background: url("../img/filter.svg") no-repeat center top;
+    width: 12px;
+    height: 15px;
+    left: 11px;
+    top: 8px; }
 
 .page-header {
   min-height: 62px; }
@@ -127,6 +145,51 @@ html {
   .page-header__contact-tel {
     padding-top: 7px;
     padding-left: 15px; }
+
+.field-select {
+  display: block; }
+  .field-select__name {
+    display: block;
+    margin-bottom: 0.4em;
+    line-height: 1.5;
+    font-weight: 700; }
+  .field-select__select {
+    display: inline-block;
+    vertical-align: middle;
+    width: 154px;
+    line-height: 1.5;
+    padding: 5px 25px;
+    font-size: inherit;
+    font-family: inherit;
+    border: 0;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    box-shadow: 1px 1px 6px #d3d3d3;
+    border-radius: 20px;
+    background-color: #fff;
+    background-image: url("../img/select-down.svg");
+    background-repeat: no-repeat;
+    background-position: 130px; }
+    .field-select__select[multiple] {
+      background-image: none;
+      min-height: 6.8em; }
+    .field-select__select::-ms-expand {
+      display: none; }
+    .field-select__select:active, .field-select__select:focus {
+      outline: 0;
+      box-shadow: 0 0 0 2px rgba(2, 117, 217, 0.7); }
+    .field-select__select[disabled], .field-select__select[readonly] {
+      cursor: default;
+      background-color: #e6e6e6; }
+  .field-select__help-text {
+    display: block;
+    padding-top: 0.4em;
+    font-size: 80%;
+    line-height: 1.2em;
+    color: gray; }
+    .field-select__help-text:empty {
+      display: none; }
 
 .logo {
   display: inline-block;
@@ -423,6 +486,15 @@ html {
 .room__item .btn {
   margin-bottom: 25px; }
 
+.room__filters {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: baseline;
+      align-items: baseline;
+  margin-bottom: 25px; }
+
 .room__item-wrap {
   border: 1px solid #E1E1E1;
   -ms-flex-positive: 1;
@@ -464,6 +536,9 @@ html {
   font-weight: 600;
   font-size: 18px;
   line-height: 22px; }
+
+.room__content-list li {
+  margin-bottom: 8px; }
 
 .room__title {
   font-family: "Rubik-Bold", "Ubuntu", "Droid Sans", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";

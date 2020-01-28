@@ -17,6 +17,7 @@ $border-radius:               rem(3px) !default;
   &__input-wrap {}
 
   &__select {
+    // position: relative;
     display: inline-block;
     vertical-align: middle;
     // width: 100%;
@@ -49,7 +50,9 @@ $border-radius:               rem(3px) !default;
 
     &:active,
     &:focus {
-      @include field-focus;
+      // @include field-focus;
+      border-radius: 6px;
+      background-image: url('../img/select-up.svg');
     }
 
     &[disabled],
@@ -58,6 +61,27 @@ $border-radius:               rem(3px) !default;
       background-color: $gray-lightest;
     }
   }
+
+  // &__select span {
+  //   position: relative;
+  // }
+
+  // &__select option:nth-child(odd) {
+  //   background-image: url("../img/arrow-up.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: 10px;
+  //   background-size: 7px 12px;
+  // }
+
+  // &__select option:nth-child(even) span:before {
+  //   position: absolute;
+  //   content: "";
+  //   background: url("../img/arrow-down.svg") no-repeat;
+  //   width: 7px;
+  //   height: 12px;
+  //   top: 0;
+  //   left: 5px;
+  // }
 
   &__help-text {
     @include field-help-text;

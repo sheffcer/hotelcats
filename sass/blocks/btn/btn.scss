@@ -105,6 +105,28 @@
     z-index: 10;
   }
 
+  &--filter {
+    position: relative;
+    width: 111px;
+    padding: 0;
+    border: 0;
+    box-shadow: 1px 1px 6px #d3d3d3;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+  }
+
+  &--filter::before {
+    position: absolute;
+    content: "";
+    background: url('../img/filter.svg') no-repeat center top;
+    width: 12px;
+    height: 15px;
+    left: 11px;
+    top: 8px;
+  }
+
   // &__icon {
   //   display: inline-block;
   //   vertical-align: middle;

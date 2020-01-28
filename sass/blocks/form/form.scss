@@ -5,10 +5,15 @@ $font-size--h3:               rem(24px) !default;
 $line-height:                 1.5 !default;
 
 .form {
+  display: none;
 
-  // $block-name:                &; // #{$block-name}__element
-  &__inner {
-    @include container;
+  @media (min-width: $screen-lg) {
+    display: block;
+    width: 210px;
+  }
+
+   &__inner {
+    // @include container;
     outline: 1px dotted #000000;
   }
 

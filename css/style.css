@@ -177,8 +177,8 @@ html {
     .field-select__select::-ms-expand {
       display: none; }
     .field-select__select:active, .field-select__select:focus {
-      outline: 0;
-      box-shadow: 0 0 0 2px rgba(2, 117, 217, 0.7); }
+      border-radius: 6px;
+      background-image: url("../img/select-up.svg"); }
     .field-select__select[disabled], .field-select__select[readonly] {
       cursor: default;
       background-color: #e6e6e6; }

@@ -790,7 +790,187 @@ html {
     line-height: 1.5;
     white-space: normal;
     color: currentColor; }
-  @media (min-width: 320px) {
+
+.field-text {
+  display: block;
+  margin-bottom: 1rem;
+  width: 100px; }
+  .field-text__name {
+    display: block;
+    margin-bottom: 0.4em;
+    line-height: 1.5;
+    font-weight: 700;
+    margin-bottom: 1em; }
+  .field-text__input-wrap {
+    display: block; }
+  .field-text__input {
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    padding: 3px 8px;
+    margin: 0;
+    font-family: "Lato-Regular", "Ubuntu", "Droid Sans", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    background-color: #fff;
+    border: 1px solid #E1E1E1;
+    border-radius: rem(3px);
+    -webkit-appearance: textfield;
+       -moz-appearance: textfield;
+            appearance: textfield; }
+    .field-text__input:focus {
+      outline: 0;
+      box-shadow: 0 0 0 2px rgba(2, 117, 217, 0.7); }
+    .field-text__input[disabled], .field-text__input[readonly] {
+      cursor: default;
+      background-color: #cccccc; }
+    .field-text__input[type='search']::-webkit-search-cancel-button, .field-text__input[type='search']::-webkit-search-decoration {
+      -webkit-appearance: none; }
+    .field-text__input[type='color'] {
+      padding: 0; }
+    .field-text__input:-ms-input-placeholder {
+      color: gray;
+      opacity: 1; }
+    .field-text__input::placeholder {
+      color: gray;
+      opacity: 1; }
+    textarea.field-text__input {
+      height: auto;
+      min-height: calc(3.6em + 2px);
+      resize: vertical; }
+  .field-text__help-text {
+    display: block;
+    padding-top: 0.4em;
+    font-size: 80%;
+    line-height: 1.2em;
+    color: gray; }
+    .field-text__help-text:empty {
+      display: none; }
+
+.field-checkbox {
+  margin-top: 2px;
+  display: block;
+  margin-bottom: 1rem; }
+  .field-checkbox__title {
+    display: block;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 0.4em; }
+  .field-checkbox__input-wrap + .field-checkbox__input-wrap {
+    display: block;
+    margin-top: 1rem; }
+  .field-checkbox__name {
+    position: relative;
+    display: block;
+    margin-bottom: 0.7em;
+    padding-left: 2em;
+    padding-top: 0.3em;
+    margin-right: 0.6em;
+    font-family: "Lato-Regular", "Ubuntu", "Droid Sans", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px; }
+  .field-checkbox__name-text {
+    display: inline-block; }
+    .field-checkbox__name-text:before {
+      content: '';
+      position: absolute;
+      top: 0.33333rem;
+      left: 0;
+      width: 1.33333rem;
+      height: 1.33333rem;
+      border: 1px solid #E1E1E1;
+      border-radius: rem(3px); }
+    input:focus ~ .field-checkbox__name-text:before {
+      outline: 0;
+      box-shadow: 0 0 0 2px rgba(2, 117, 217, 0.7); }
+    .field-checkbox__name-text:after {
+      content: '';
+      position: absolute;
+      top: 0.53333rem;
+      left: 4px;
+      width: 0.93333rem;
+      height: 0.4rem;
+      opacity: 0;
+      border-left: 1px solid currentColor;
+      border-bottom: 1px solid currentColor;
+      transform: rotate(-45deg);
+      transition: opacity 0.3s;
+      box-shadow: 1px 2px 0 #fff, inset 0 -2px 0 #fff; }
+      input:checked ~ .field-checkbox__name-text:after {
+        opacity: 1; }
+  .field-checkbox__input {
+    position: absolute;
+    top: 0.7em;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    transform: translateY(-50%);
+    opacity: 0; }
+    .field-checkbox__input:focus, .field-checkbox__input:active {
+      outline: 0;
+      box-shadow: 0 0 0 2px rgba(2, 117, 217, 0.7); }
+  .field-checkbox__help-text-wrap {
+    padding-left: 1.5em; }
+  .field-checkbox__help-text {
+    display: block;
+    padding-top: 0.4em;
+    font-size: 80%;
+    line-height: 1.2em;
+    color: gray; }
+    .field-checkbox__help-text:empty {
+      display: none; }
+
+.fields-group {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 1rem; }
+  .fields-group .btn,
+  .fields-group select,
+  .fields-group input {
+    position: relative;
+    margin: 0; }
+    .fields-group .btn:focus,
+    .fields-group select:focus,
+    .fields-group input:focus {
+      position: relative;
+      z-index: 1; }
+  .fields-group .field-actions,
+  .fields-group .field-text {
+    margin: 0; }
+  .fields-group .field-actions:not(:last-child) .btn {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+  .fields-group .field-actions:not(:first-child) .btn {
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; }
+  .fields-group .field-actions .btn:focus {
+    z-index: 1; }
+  .fields-group .field-text:not(:last-child) .field-text__input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+  .fields-group .field-text:not(:first-child) .field-text__input {
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; }
+
+.field-text--error .field-text__name,
+.field-text--error .field-text__input,
+.field-text--error .field-text__help-text {
+  color: #d8544f; }
+
+.field-text--error .field-text__input {
+  border-color: #d8544f;
+  background-color: #f9e2e2; }
+
+@media (min-width: 320px) {
       .page-header__inner {
         width: 290px;
         padding-left: 15px;
@@ -831,7 +1011,8 @@ html {
         width: 290px;
         padding-left: 15px;
         padding-right: 15px; } }
-  @media (min-width: 480px) {
+
+@media (min-width: 480px) {
       .features__item {
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
@@ -844,7 +1025,8 @@ html {
         max-width: 100%;
         padding-left: 0;
         padding-right: 0; } }
-  @media (min-width: 768px) {
+
+@media (min-width: 768px) {
       .btn--intro {
         margin-top: 17px; }
       .page-header__inner {
@@ -1062,7 +1244,8 @@ html {
       background-color: #FFFEFD !important; }
     .nav-toggle {
       display: none; } }
-  @media (min-width: 1366px) {
+
+@media (min-width: 1366px) {
       .btn--intro {
         margin: 0;
         margin-left: 98px;
@@ -1151,6 +1334,8 @@ html {
       width: 1170px; }
     .room__inner {
       width: 1170px; }
+  .room__grid {
+    max-width: 870px; }
   .room__wrap {
     display: -ms-flexbox;
     display: flex;
@@ -1204,7 +1389,8 @@ html {
     .form {
       display: block;
       width: 210px; } }
-  @media (min-width: 1800px) {
+
+@media (min-width: 1800px) {
       .page-header__inner {
         width: 1170px; }
     .page-footer__inner {

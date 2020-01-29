@@ -888,14 +888,16 @@ html {
     margin-bottom: 0.7em;
     padding-left: 2em;
     padding-top: 0.3em;
-    margin-right: 0.6em;
+    margin-right: 0.6em; }
+  .field-checkbox__name-text {
+    display: inline-block;
+    padding-left: 0.6em;
+    padding-top: 0.3em;
     font-family: "Lato-Regular", "Ubuntu", "Droid Sans", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 17px; }
-  .field-checkbox__name-text {
-    display: inline-block; }
     .field-checkbox__name-text:before {
       content: '';
       position: absolute;

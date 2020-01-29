@@ -84,6 +84,15 @@
     line-height: 33px;
   }
 
+  &__header-wrap {
+
+    @media (min-width: $screen-lg) {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+  }
+
   &__content-list {
     list-style: none;
     padding: 0;

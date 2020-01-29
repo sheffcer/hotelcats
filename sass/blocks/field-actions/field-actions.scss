@@ -3,9 +3,7 @@ $font-size--small:            80% !default;
 $line-height:                 1.5 !default;
 
 .field-actions {
-
-  $block-name:                &; // #{$block-name}__element
-
+  margin-top: 2.5em;
   display: block;
   margin-top: 1rem;
   margin-bottom: 1rem;

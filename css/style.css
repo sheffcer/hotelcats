@@ -826,8 +826,6 @@ html {
     display: block; }
   .field-text__input {
     box-sizing: border-box;
-    display: inline-block;
-    vertical-align: middle;
     width: 100%;
     padding: 3px 8px;
     margin: 0;
@@ -1379,8 +1377,6 @@ html {
       max-width: 33.33333%;
       padding-left: 0;
       padding-right: 0; }
-    .room__item {
-      width: 270px; }
   .room__header-wrap {
     display: -ms-flexbox;
     display: flex;

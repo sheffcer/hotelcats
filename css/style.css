@@ -574,6 +574,51 @@ html {
 .room__icons img {
   margin-right: 5px; }
 
+.banner {
+  margin-bottom: 50px; }
+  .banner__inner {
+    display: block;
+    width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url("../img/banner-mobile.png") no-repeat center top;
+    min-height: 497px; }
+  .banner__item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    padding-top: 45px; }
+  .banner__item .btn--intro {
+    margin-top: 20px; }
+  .banner__header {
+    padding: 0;
+    margin: 0;
+    font-family: "Rubik-Bold", "Ubuntu", "Droid Sans", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 37px;
+    line-height: 44px; }
+  .banner__description {
+    padding: 0;
+    margin: 0;
+    font-family: "Rubik-Bold", "Ubuntu", "Droid Sans", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px; }
+  .banner__text {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: "Lato-Regular", "Ubuntu", "Droid Sans", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 140%; }
+
 .room-slider {
   margin-top: -40px;
   background: url("../img/fish-background.svg") no-repeat;
@@ -1034,6 +1079,10 @@ html {
       width: 290px;
       padding-left: 15px;
       padding-right: 15px; }
+      .banner__inner {
+        width: 290px;
+        padding-left: 15px;
+        padding-right: 15px; }
       .room-slider__inner {
         width: 290px;
         padding-left: 15px;
@@ -1199,6 +1248,29 @@ html {
       padding-right: 0; }
     .room__item {
       min-height: 428px; }
+      .banner__inner {
+        width: 678px; }
+      .banner__inner {
+        background: url("../img/banner-tablet.png") no-repeat center top;
+        min-height: 359px; }
+      .banner__item {
+        padding-top: 69px;
+        padding-left: 50px;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+      .banner__item .btn--intro {
+        margin: 0;
+        margin-top: 20px; }
+      .banner__header {
+        font-size: 56px;
+        line-height: 66px; }
+      .banner__description {
+        font-size: 36px;
+        line-height: 43px; }
+      .banner__text {
+        font-size: 15px;
+        line-height: 140%;
+        max-width: 240px; }
     .room-slider {
       margin-top: 57px;
       background-size: 339px 109px;
@@ -1384,6 +1456,16 @@ html {
         align-items: baseline;
     -ms-flex-pack: justify;
         justify-content: space-between; }
+      .banner__inner {
+        width: 1170px; }
+      .banner__inner {
+        width: 1170px; }
+      .banner__inner {
+        background: url("../img/banner-desktop.png") no-repeat center top;
+        min-height: 379px; }
+      .banner__item {
+        padding-top: 78px;
+        padding-left: 270px; }
     .room-slider {
       margin-top: 86px; }
       .room-slider__inner {
@@ -1441,6 +1523,8 @@ html {
       width: 1170px; }
     .room__inner {
       width: 1170px; }
+      .banner__inner {
+        width: 1170px; }
       .room-slider__inner {
         width: 1170px; }
       .review__inner {

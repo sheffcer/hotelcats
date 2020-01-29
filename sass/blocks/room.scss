@@ -12,6 +12,11 @@
       justify-content: space-around;
       // width: 870px;
     }
+
+    @media (min-width: $screen-lg) {
+      // justify-content: space-around;
+      max-width: 870px;
+    }
   }
 
   &__wrap {

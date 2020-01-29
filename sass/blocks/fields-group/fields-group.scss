@@ -4,8 +4,9 @@
   $block-name:                &; // #{$block-name}__element
 
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  // flex-wrap: wrap;
+  // align-items: flex-start;
+  justify-content: space-between;
   margin-bottom: 1rem;
 
   .btn,

@@ -87,21 +87,76 @@
       </div>
       <div class="room__wrap">
         <!-- <div class="room__form"> -->
-          <form action="" class="form">
-            <fieldset>
-              <legend>Название формы</legend>
-              <div class="fields-group">
-                <label class="field-text  fields-group__item">
-                  <input class="field-text__input" type="text" placeholder="input[type=text]">
-                  <small class="field-select__help-text">Пояснение отдельного поля, если длинное, распирает блок? Нет.</small>
-                </label>
-                <label class="field-text  fields-group__item">
-                  <input class="field-text__input" type="text" placeholder="input[type=text]">
-                  <small class="field-select__help-text">Пояснение.</small>
-                </label>
+        <form action="" class="form">
+          <div class="field-text__name">Цена за сутки, ₽</div>
+          <div class="fields-group">
+            <label class="field-text">
+              <!-- <div class="field-text__name">Цена за сутки, ₽</div> -->
+              <div class="field-text__input-wrap">
+                <input class="field-text__input" type="text" placeholder="от 100">
               </div>
-            </fieldset>
-          </form>
+            </label>
+            <label class="field-text">
+              <div class="field-text__input-wrap">
+                <input class="field-text__input" type="text" placeholder="до 600">
+              </div>
+            </label>
+          </div>
+          <div class="field-checkbox">
+            <div class="field-checkbox__title">Площадь</div>
+            <div class="field-checkbox__input-wrap">
+              <label class="field-checkbox__name">
+                <input class="field-checkbox__input" type="checkbox" checked>
+                <span class="field-checkbox__name-text">0,63 м2</span>
+              </label>
+              <label class="field-checkbox__name">
+                <input class="field-checkbox__input" type="checkbox" checked>
+                <span class="field-checkbox__name-text">0,90 м2</span>
+              </label>
+              <label class="field-checkbox__name">
+                <input class="field-checkbox__input" type="checkbox" checked>
+                <span class="field-checkbox__name-text">1,13 м2</span>
+              </label>
+              <label class="field-checkbox__name">
+                <input class="field-checkbox__input" type="checkbox" checked>
+                <span class="field-checkbox__name-text">1,56 м2</span>
+              </label>
+              <label class="field-checkbox__name">
+                <input class="field-checkbox__input" type="checkbox" checked>
+                <span class="field-checkbox__name-text">2,56 м2</span>
+              </label>
+              <label class="field-checkbox__name">
+                <input class="field-checkbox__input" type="checkbox" checked>
+                <span class="field-checkbox__name-text">2,88 м2</span>
+              </label>
+             </div>
+          </div>
+          <div class="field-checkbox">
+            <div class="field-checkbox__title">Оснащение</div>
+            <div class="field-checkbox__input-wrap">
+              <label class="field-checkbox__name">
+                <input class="field-checkbox__input" type="checkbox" checked>
+                <span class="field-checkbox__name-text">Пустой номер</span>
+              </label>
+              <label class="field-checkbox__name">
+                <input class="field-checkbox__input" type="checkbox" checked>
+                <span class="field-checkbox__name-text">Лежак</span>
+              </label>
+              <label class="field-checkbox__name">
+                <input class="field-checkbox__input" type="checkbox" checked>
+                <span class="field-checkbox__name-text">Когтеточка</span>
+              </label>
+              <label class="field-checkbox__name">
+                <input class="field-checkbox__input" type="checkbox" checked>
+                <span class="field-checkbox__name-text">Игровой-комплекс</span>
+              </label>
+              <label class="field-checkbox__name">
+                <input class="field-checkbox__input" type="checkbox" checked>
+                <span class="field-checkbox__name-text">Домик</span>
+              </label>
+             </div>
+          </div>
+        </form>
         <!-- </div> -->
         <div class="room__grid">
           <div class="room__item">

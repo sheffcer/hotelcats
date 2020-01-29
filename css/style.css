@@ -109,6 +109,31 @@ html {
     top: 7px;
     left: 194px;
     z-index: 10; }
+  .btn--modal {
+    position: relative;
+    padding-left: 0;
+    padding-right: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 122px !important;
+    position: relative;
+    background-color: #FF7236;
+    margin: auto;
+    width: 209px;
+    margin-top: 0;
+    color: white !important;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    border: none; }
+  .btn--modal::after {
+    position: absolute;
+    content: "";
+    background: url("../img/paw-orange.svg") no-repeat center top;
+    width: 36px;
+    height: 36px;
+    top: 6px;
+    left: 80px;
+    z-index: 10; }
   .btn--room {
     width: 240px !important;
     position: relative;
@@ -829,6 +854,70 @@ html {
     clip: rect(0 0 0 0);
     overflow: hidden; }
 
+.modal-cart {
+  display: none;
+  position: relative; }
+  .modal-cart__inner {
+    display: block;
+    width: 290px;
+    margin-left: auto;
+    margin-right: auto; }
+  .modal-cart__close {
+    border: 0;
+    outline: 0;
+    background-color: #ffffff;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    left: 260px;
+    top: 10px;
+    background: url("../img/menu-close.svg") no-repeat; }
+  .modal-cart__shadow {
+    display: none;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+    background-color: #ffffff; }
+  .modal-cart__content {
+    min-height: 277px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    box-sizing: border-box;
+    max-width: 290px;
+    z-index: 9999;
+    position: fixed;
+    top: 30%;
+    left: 22%;
+    box-shadow: 1px 1px 6px #D3D3D3;
+    border-radius: 6px;
+    background-color: white; }
+  .modal-cart__title {
+    margin: 0;
+    margin-top: 60px;
+    font-family: "Rubik-Bold", "Ubuntu", "Droid Sans", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center; }
+  .modal-cart__text {
+    padding-left: 60px;
+    padding-right: 60px;
+    font-family: "Lato-Regular", "Ubuntu", "Droid Sans", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center; }
+
 .nav-toggle {
   position: relative;
   cursor: pointer;
@@ -1109,6 +1198,10 @@ html {
       .review__inner {
         width: 290px;
         padding-left: 15px;
+        padding-right: 15px; }
+      .modal-cart__inner {
+        width: 290px;
+        padding-left: 15px;
         padding-right: 15px; } }
   @media (min-width: 480px) {
       .features__item {
@@ -1365,6 +1458,8 @@ html {
       margin: 0;
       padding: 0;
       background-color: #FFFEFD !important; }
+      .modal-cart__inner {
+        width: 678px; }
     .nav-toggle {
       display: none; } }
   @media (min-width: 1366px) {
@@ -1525,6 +1620,10 @@ html {
         max-width: 100%;
         padding-left: 0;
         padding-right: 0; }
+      .modal-cart__inner {
+        width: 1170px; }
+      .modal-cart__inner {
+        width: 1170px; }
     .form {
       display: block;
       width: 210px; } }
@@ -1550,4 +1649,6 @@ html {
       .room-slider__inner {
         width: 1170px; }
       .review__inner {
+        width: 1170px; }
+      .modal-cart__inner {
         width: 1170px; } }

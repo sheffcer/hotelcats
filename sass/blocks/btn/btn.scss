@@ -105,6 +105,35 @@
     z-index: 10;
   }
 
+  &--modal {
+    position: relative;
+    padding-left: 0;
+    padding-right: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 122px!important;
+    position: relative;
+    background-color: $btn-color;
+    margin: auto;
+    width: 209px;
+    margin-top: 0;
+    color: white!important;
+    flex-shrink: 0;
+    border: none;
+  }
+
+  &--modal::after {
+    position: absolute;
+    content: "";
+    background: url('../img/paw-orange.svg') no-repeat center top;
+    width: 36px;
+    height: 36px;
+    top: 6px;
+    left: 80px;
+    z-index: 10;
+    // margin-bottom: 60px!important;
+  }
+
 
   &--room {
     width: 240px!important;

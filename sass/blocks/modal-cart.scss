@@ -1,6 +1,6 @@
 .modal-cart {
-  display: block;
-  // display: none;
+  // display: block;
+  display: none;
   position: relative;
   // }
 
@@ -20,6 +20,19 @@
     background: url("../img/menu-close.svg") no-repeat;
   }
 
+  &__shadow {
+    // display: block;
+    display: none;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+    background-color: #ffffff;
+  }
+
   &__content {
     min-height: 277px;
     display: flex;
@@ -34,19 +47,6 @@
     box-shadow: 1px 1px 6px $cart-shadow;
     border-radius: 6px;
     background-color: $body-bg;
-  }
-
-  &__shadow {
-    display: block;
-    // display: none;
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.85;
-    background-color: #ffffff;
   }
 
   &__title {

@@ -1,7 +1,7 @@
-let modal = document.querySelector('.modal-cart');
-let modalShadow = document.querySelector('.modal-cart__shadow');
+let modal = document.querySelector('.modal-cart--form');
+let modalShadow = document.querySelector('.modal-cart--form .modal-cart__shadow');
 let modalButton = document.querySelector('.modal-cart .btn');
-let modalClose = document.querySelector('.modal-cart__close');
+let modalClose = document.querySelector('.modal-cart--form .modal-cart__close');
 let modalButtons = document.querySelectorAll(".room__grid a.btn--room");
 
 modalButtons.forEach(button => {
@@ -11,13 +11,13 @@ modalButtons.forEach(button => {
   });
 });
 
-modalButton.addEventListener('click', function () {
+modalButton.addEventListener('click', () => {
   modalShadow.style.cssText = 'display:none';
   modal.style.cssText = 'display:none';
 
 });
 
-modalClose.addEventListener('click', function () {
+modalClose.addEventListener('click', () => {
   modalShadow.style.cssText = 'display:none';
   modal.style.cssText = 'display:none';
 })

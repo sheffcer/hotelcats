@@ -91,14 +91,14 @@
         <form action="" class="form">
           <div class="field-text__name">Цена за сутки, ₽</div>
           <div class="fields-group">
-            <label class="field-text">
+            <label class="field-text  field-text--filter">
               <div class="field-text__input-wrap">
-                <input class="field-text__input" type="text" placeholder="от 100">
+                <input class="field-text__input  field-text__input--filter" type="text" placeholder="от 100">
               </div>
             </label>
-            <label class="field-text">
+            <label class="field-text  field-text--filter">
               <div class="field-text__input-wrap">
-                <input class="field-text__input" type="text" placeholder="до 600">
+                <input class="field-text__input  field-text__input--filter" type="text" placeholder="до 600">
               </div>
             </label>
           </div>
@@ -300,7 +300,7 @@
           <p class="banner__description">Каждый 7-й день</p>
           <h2 class="banner__header">бесплатно!</h2>
           <p class="banner__text">Акция действует при размещении в номерах “Люкс” и “Супер-Люкс”</p>
-            <a href="#" class="btn  btn--intro">Забронировать</a>
+          <a href="#" class="btn  btn--intro">Забронировать</a>
         </div>
       </div>
     </div>
@@ -391,18 +391,52 @@
       </div>
     </div>
   </div>
-  <!-- <div class="modal-cart__shadow"></div> -->
   <div class="modal-cart">
     <div class="modal-cart__shadow"></div>
     <div class="modal-cart__inner">
-       <div class="modal-cart__content">
+      <div class="modal-cart__content">
         <h2 class="modal-cart__title">Спасибо за заявку</h2>
-      <button class="modal-cart__close" type="button"></button>
+        <button class="modal-cart__close" type="button"></button>
         <p class="modal-cart__text">Мы свяжемся с вами
-        в ближайшее время</p>
+          в ближайшее время</p>
 
-           <button type="submit" class="btn  btn--modal" value="Ок">Ок</button>
-       </div>
+        <button type="submit" class="btn  btn--modal" value="Ок">Ок</button>
+      </div>
+    </div>
+  </div>
+  <div class="modal-cart  modal-cart--form">
+    <div class="modal-cart__shadow"></div>
+    <div class="modal-cart__inner">
+      <form action="">
+      <div class="modal-cart__content  modal-cart__content--form">
+
+          <h2 class="modal-cart__title modal-cart__title--form">Забронировать номер</h2>
+          <div class="fields-group  fields-group--modal">
+            <label class="field-text  field-text--modal">
+              <div class="field-text__input-wrap">
+                <input class="field-text__input  field-text__input--modal" type="text" placeholder="Ваше имя" required>
+              </div>
+            </label>
+            <label class="field-text  field-text--modal">
+              <div class="field-text__input-wrap">
+                <input class="field-text__input  field-text__input--modal" type="text" placeholder="Имя Питомца" required>
+              </div>
+            </label>
+            <label class="field-text  field-text--modal">
+              <div class="field-text__input-wrap">
+                <input class="field-text__input  field-text__input--modal" type="text" placeholder="Телефон" required>
+              </div>
+            </label>
+            <label class="field-text  field-text--modal">
+              <div class="field-text__input-wrap">
+                <input class="field-text__input  field-text__input--modal" type="email" placeholder="E-mail" required>
+              </div>
+            </label>
+          </div>
+          <button class="modal-cart__close" type="button"></button>
+          <button type="submit" class="btn  btn--room" value="Ок">Отправить заявку</button>
+        </form>
+      </div>
     </div>
   </div>
   <script src="js/index.js"></script>

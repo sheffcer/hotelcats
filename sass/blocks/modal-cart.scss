@@ -47,6 +47,14 @@
     box-shadow: 1px 1px 6px $cart-shadow;
     border-radius: 6px;
     background-color: $body-bg;
+
+    &--form {
+      padding-bottom: 40px;
+    }
+
+    & button {
+      padding-left: 0;
+    }
   }
 
   &__title {

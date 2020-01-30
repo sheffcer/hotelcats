@@ -1,7 +1,7 @@
 let modal = document.querySelector('.modal-cart--form');
-let modalShadow = document.querySelector('.modal-cart__shadow');
+let modalShadow = document.querySelector('.modal-cart--form .modal-cart__shadow');
 let modalButton = document.querySelector('.modal-cart .btn');
-let modalClose = document.querySelector('.modal-cart__close');
+let modalClose = document.querySelector('.modal-cart--form .modal-cart__close');
 let modalButtons = document.querySelectorAll(".room__grid a.btn--room");
 
 modalButtons.forEach(button => {

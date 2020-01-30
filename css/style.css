@@ -899,6 +899,10 @@ html {
     box-shadow: 1px 1px 6px #D3D3D3;
     border-radius: 6px;
     background-color: white; }
+    .modal-cart__content--form {
+      padding-bottom: 40px; }
+    .modal-cart__content button {
+      padding-left: 0; }
   .modal-cart__title {
     margin: 0;
     margin-top: 60px;

@@ -895,7 +895,7 @@ html {
     max-width: 290px;
     z-index: 9999;
     position: fixed;
-    top: 30%;
+    top: 20%;
     box-shadow: 1px 1px 6px #D3D3D3;
     border-radius: 6px;
     background-color: white; }
@@ -979,11 +979,19 @@ html {
     width: 100px; }
   .field-text--modal {
     margin-bottom: 1rem !important; }
+  .field-text--date {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: baseline;
+        align-items: baseline; }
   .field-text__name {
-    display: block;
-    margin-bottom: 0.4em;
-    line-height: 1.5;
-    font-weight: 700;
+    font-family: "Lato-Regular", "Ubuntu", "Droid Sans", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
     margin-bottom: 1em; }
   .field-text__input-wrap {
     display: block; }
@@ -991,6 +999,12 @@ html {
     box-sizing: border-box;
     padding: 17px 20px !important;
     width: 259px;
+    border-radius: 25px; }
+  .field-text__input--date {
+    box-sizing: border-box;
+    padding: 17px 0 !important;
+    padding-left: 10px !important;
+    width: 107px;
     border-radius: 25px; }
   .field-text__input--filter {
     width: 100%; }
@@ -1119,31 +1133,53 @@ html {
     .field-checkbox__help-text:empty {
       display: none; }
 
-.fields-group {
+.fields-group--modal {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.fields-group--filter {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between; }
-  .fields-group--modal {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    -ms-flex-direction: column;
-        flex-direction: column; }
-  .fields-group .btn,
-  .fields-group select,
-  .fields-group input {
+
+.fields-group__header {
+  font-family: "Lato-Regular", "Ubuntu", "Droid Sans", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px; }
+
+.fields-group__wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: baseline;
+      align-items: baseline;
+  margin-bottom: 30px !important; }
+
+.fields-group .btn,
+.fields-group select,
+.fields-group input {
+  position: relative;
+  margin: 0; }
+  .fields-group .btn:focus,
+  .fields-group select:focus,
+  .fields-group input:focus {
     position: relative;
-    margin: 0; }
-    .fields-group .btn:focus,
-    .fields-group select:focus,
-    .fields-group input:focus {
-      position: relative;
-      z-index: 1; }
-  .fields-group .field-actions,
-  .fields-group .field-text {
-    margin: 0; }
-  .fields-group .field-actions .btn:focus {
     z-index: 1; }
+
+.fields-group .field-actions,
+.fields-group .field-text {
+  margin: 0; }
+
+.fields-group .field-actions .btn:focus {
+  z-index: 1; }
 
 .field-text--error .field-text__name,
 .field-text--error .field-text__input,

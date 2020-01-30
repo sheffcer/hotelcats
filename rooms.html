@@ -90,7 +90,7 @@
       <div class="room__wrap">
         <form action="" class="form">
           <div class="field-text__name">Цена за сутки, ₽</div>
-          <div class="fields-group">
+          <div class="fields-group  fields-group--filter">
             <label class="field-text  field-text--filter">
               <div class="field-text__input-wrap">
                 <input class="field-text__input  field-text__input--filter" type="text" placeholder="от 100">
@@ -408,7 +408,7 @@
     <div class="modal-cart__shadow"></div>
     <div class="modal-cart__inner">
       <form action="">
-      <div class="modal-cart__content  modal-cart__content--form">
+        <div class="modal-cart__content  modal-cart__content--form">
 
           <h2 class="modal-cart__title modal-cart__title--form">Забронировать номер</h2>
           <div class="fields-group  fields-group--modal">
@@ -419,7 +419,8 @@
             </label>
             <label class="field-text  field-text--modal">
               <div class="field-text__input-wrap">
-                <input class="field-text__input  field-text__input--modal" type="text" placeholder="Имя Питомца" required>
+                <input class="field-text__input  field-text__input--modal" type="text" placeholder="Имя Питомца"
+                  required>
               </div>
             </label>
             <label class="field-text  field-text--modal">
@@ -427,17 +428,36 @@
                 <input class="field-text__input  field-text__input--modal" type="text" placeholder="Телефон" required>
               </div>
             </label>
-            <label class="field-text  field-text--modal">
+            <label class="field-text  field-text--error field-text--modal">
               <div class="field-text__input-wrap">
                 <input class="field-text__input  field-text__input--modal" type="email" placeholder="E-mail" required>
               </div>
             </label>
           </div>
+          <div class="fields-group  fields-group--date">
+            <p class="fields-group__header">Дата заезда</p>
+            <div class="fields-group__wrap">
+              <label class="field-text  field-text--date">
+                <div class="field-text__name">c</div>
+                <div class="field-text__input-wrap">
+                  <input class="field-text__input  field-text__input--date" type="date" placeholder="26.01.2020"
+                    required>
+                </div>
+              </label>
+              <label class="field-text  field-text--date">
+                <div class="field-text__name">по</div>
+                <div class="field-text__input-wrap">
+                  <input class="field-text__input  field-text__input--date" type="date" placeholder="26.02.2020"
+                    required>
+                </div>
+              </label>
+            </div>
+          </div>
           <button class="modal-cart__close" type="button"></button>
           <button type="submit" class="btn  btn--room" value="Ок">Отправить заявку</button>
-        </form>
-      </div>
+      </form>
     </div>
+  </div>
   </div>
   <script src="js/index.js"></script>
   <script src="js/modal.js"></script>

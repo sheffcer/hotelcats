@@ -992,7 +992,8 @@ html {
     font-weight: normal;
     font-size: 15px;
     line-height: 18px;
-    margin-bottom: 1em; }
+    margin-bottom: 1em;
+    margin-right: 6px; }
   .field-text__input-wrap {
     display: block; }
   .field-text__input--modal {
@@ -1135,7 +1136,6 @@ html {
 
 .fields-group--modal {
   margin-top: 30px;
-  margin-bottom: 20px;
   -ms-flex-direction: column;
       flex-direction: column; }
 
@@ -1153,6 +1153,7 @@ html {
   line-height: 18px; }
 
 .fields-group__wrap {
+  min-width: 260px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
